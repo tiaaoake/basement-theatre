@@ -855,7 +855,11 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 }
 
 
-#page-header {  }
+#page-header {
+  max-width:960px;
+  margin: 0 auto;
+}
+
 #page-thumb {
   display:none;
   height: 100%;
