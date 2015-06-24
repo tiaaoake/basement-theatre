@@ -37,7 +37,7 @@ h3, h4, h5, h6, p, a {
 }
 
 //tweak: { type: 'value', title: 'Site Width', min: 480, max: 1280, step: 10, target: '#page-body', property: 'width', category: 'Site Wide' }
-@siteWidth: 960px;
+@siteWidth: 100%;
 
 //tweak: { type: 'dropdown', title: 'Canvas Setting', options:[ 'Full Width', 'Site Width' ], default: 'Full Width', target: '#canvas', category: 'Site Wide' }
 
