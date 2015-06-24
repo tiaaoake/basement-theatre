@@ -581,12 +581,11 @@ nav ul, nav ol { margin: 0; }
 }
 
 .horizontal-navigation-bar {
-
+  height:70px !important;
   line-height: 1 !important;
   margin: auto;
   width: auto;
-  max-width: @siteWidth;
-  position: fixed;
+  position: relative;
   padding: @navSpacing 0;
 
   nav {
