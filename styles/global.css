@@ -772,6 +772,10 @@ span.delimiter {
   color: @bordersColor;
 }
 
+.main-content {
+  margin: 0 auto;
+}
+
 .main-content span.delimiter {
   padding: 0 0.5em 0 0.7em;
 }
