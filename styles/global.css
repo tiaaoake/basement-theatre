@@ -473,10 +473,11 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
   a:active, .active-link a, .folder .active-folder { color: @navLinkActiveColor !important; }
 }
 
-#main-navigation ul {
-  margin-left:3px;
+/* #main-navigation ul li a {
+  margin-left:1em;
+  padding-bottom:5px;
 }
-
+ */
 
 
 /* FONTS & VERTICAL GRID
@@ -599,7 +600,7 @@ nav ul, nav ol { margin: 0; }
   height:70px !important;
   line-height: 1 !important;
   margin: auto;
-  width: auto;
+  width: 960px;
   position: fixed;
   float:none !important;
   padding: @navSpacing 0;
