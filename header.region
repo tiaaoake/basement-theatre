@@ -40,22 +40,23 @@
 
 				    		<!-- // logo or site title markup in nav area -->
 					      {.section website}
-					      	{.if logoImageUrl}
-						      <div id="banner-wrapper" data-content-field="site-title">
-						        <a href="/"><img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a>
-						      </div>
-					        {.or}
-									<div id="site-title-wrapper" data-content-field="site-title">
-										<h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
-									</div>
-					        {.end}
+                  {.if socialAccounts}
+                  <div id="sqs-social" data-content-field="connected-accounts">
+                    {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
+                  </div>
+                  {.end}
+					      	<!-- {.if logoImageUrl}
+					      	                  <div id="banner-wrapper" data-content-field="site-title">
+					      	                    <a href="/"><img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a>
+					      	                  </div>
+					      	                  {.or}
+					      	                  <div id="site-title-wrapper" data-content-field="site-title">
+					      	                    <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
+					      	                  </div>
+					      	                  {.end} -->
 
 					    		<squarespace:navigation navigationId="mainNav" template="main-navigation" />
-				          {.if socialAccounts}
-			            <div id="sqs-social" data-content-field="connected-accounts">
-			              {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
-			            </div>
-				          {.end}
+
 					      {.end}
 
 				    	</div>

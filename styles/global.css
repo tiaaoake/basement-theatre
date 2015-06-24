@@ -1253,7 +1253,7 @@ body.top-navigation-alignment-left {
       /*margin-bottom: (@nav-font-font-size/2);*/
       /*margin-top: (@site-name-font-font-size/2);*/
       /*margin-bottom: (@site-name-font-font-size/2);*/
-      float: right;
+      float: left;
       text-align: right;
     }
   }
@@ -1262,7 +1262,7 @@ body.top-navigation-alignment-left {
   }
 }
 
-body.top-navigation-alignment-center {
+/* body.top-navigation-alignment-center {
   .horizontal-navigation-bar {
     text-align: center;
 
@@ -1298,7 +1298,7 @@ body.top-navigation-alignment-right {
       text-align: inherit;
       padding-left: @navSpacing;
     }
-  }
+  } */
 }
 
 
