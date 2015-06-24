@@ -1,8 +1,12 @@
-/* LESS colour declarations */
+/* colour declarations */
 @basement-orange: #f93a2b;
 @basement-red: #d6009e;
 @basement-blue: #039;
 @basement-green: #1cce28;
+
+/* box-shadow */
+@box-shadow-top:  0px -3px 4px 0px rgba(50, 50, 50, 0.5);
+@box-shadow-bottom: 0px 3px 4px 0px rgba(50, 50, 50, 0.5);
 
 /* correct title margin to navbar offset */
 .collection-type-index .title-desc-wrapper {
@@ -43,9 +47,15 @@ whats-on.section
 #block-yui_3_17_2_2_1435157932706_25100,
 #block-yui_3_17_2_2_1431400265136_26050, #block-yui_3_17_2_24_1431401661494_8621, #block-yui_3_17_2_6_1433978922996_19932, #block-yui_3_17_2_68_1431401661494_6048, #block-yui_3_17_2_2_1433901705627_28464 {
   background:@basement-blue;
-  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.5);
-  box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: @box-shadow-bottom;
+  -moz-box-shadow:    @box-shadow-bottom;
+  box-shadow:         @box-shadow-bottom;
+}
+
+#block-yui_3_17_2_2_1431400265136_26050 {
+  -webkit-box-shadow: @box-shadow-top;
+  -moz-box-shadow: @box-shadow-top;
+  box-shadow: @box-shadow-top;
 }
 
 #block-yui_3_17_2_2_1431400265136_26050 h1 { /*whats-on*/
