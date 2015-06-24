@@ -451,6 +451,10 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 
 }
 
+#page-body-wrapper.one-sidebar {
+  background: rgb(205,45,108);
+}
+
 .sqs-block-horizontalrule hr {
   color: @bordersColor;
   background-color: @bordersColor;
