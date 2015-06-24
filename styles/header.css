@@ -43,7 +43,7 @@ a.header-brand.scroll-shrink {
 
 	#canvas-wrapper,
 	#canvas {
-	  margin-top:58px;
+	  margin-top:58px !important;
 	}
 
 	a.header-brand {
