@@ -897,13 +897,8 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
   padding-bottom: @pageSpacing;
 }
 
-div#page-body {
-  width: 100% !important;
-  margin: auto !important;
-}
-
 #page-body {
-
+  width: 100% !important;
   padding: 0 1%;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
