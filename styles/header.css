@@ -37,19 +37,25 @@ a.header-brand.scroll-shrink {
 		width: 30px;
 		margin-top:15px;
 	}
-}
-
-@media only screen and (min-width: 480px) and (max-width: 1120px) {
 
 	#canvas-wrapper,
 	#canvas {
 	  margin-top:58px !important;
 	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1120px) {
 
 	a.header-brand {
 		background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
 		height: 60px;
 		width: 60px;
 		margin-top:15px;
+	}
+
+	a.header-brand.scroll-shrink {
+		-webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+		-moz-box-shadow:    0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+		box-shadow:         0px 1px 1px 0px rgba(50, 50, 50, 0.5);
 	}
 }
