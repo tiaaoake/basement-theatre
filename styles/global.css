@@ -1,3 +1,5 @@
+
+
 /* INIT CUSTOM FONTS */
 
 @font-face {
@@ -452,7 +454,11 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 }
 
 #page-body-wrapper {
-  background: #eee;
+  padding-top: 0px !important;
+  background: rgb(245,245,245) !important;
+  -webkit-box-shadow: @box-shadow-top;
+  -moz-box-shadow: @box-shadow-top;
+  box-shadow: @box-shadow-top;
 }
 
 
@@ -881,7 +887,10 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 
 #banner-area, #banner-area-wrapper {
   max-width:960px;
-  margin: 0 auto !important;
+}
+
+#banner-area-wrapper {}
+  margin: 0 17px;
 }
 
 #banner-area {
