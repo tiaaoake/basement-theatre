@@ -883,7 +883,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 }
 
 #banner-area, #banner-area-wrapper {
-  
+  max-width:960px;
   margin: 0 auto !important;
 }
 #banner-area {
@@ -896,9 +896,14 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
   padding-top: @pageSpacing;
   padding-bottom: @pageSpacing;
 }
-#page-body {
+
+div#page-body {
   width: 100% !important;
   margin: auto !important;
+}
+
+#page-body {
+
   padding: 0 1%;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
