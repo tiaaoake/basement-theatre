@@ -37,7 +37,7 @@ h3, h4, h5, h6, p, a {
 }
 
 //tweak: { type: 'value', title: 'Site Width', min: 480, max: 1280, step: 10, target: '#page-body', property: 'width', category: 'Site Wide' }
-@siteWidth: 1020px;
+@siteWidth: 960px;
 
 //tweak: { type: 'dropdown', title: 'Canvas Setting', options:[ 'Full Width', 'Site Width' ], default: 'Full Width', target: '#canvas', category: 'Site Wide' }
 
@@ -467,10 +467,14 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 #sidebar-one .site-description { color: @siteDescColor; }
 
 #main-navigation {
-  /*z-index: 10000;*/
+  z-index: 10000;
   a:link, a:visited { color: @navLinkColor !important; }
   a:hover, a:focus { color: @navLinkHoverColor !important; }
   a:active, .active-link a, .folder .active-folder { color: @navLinkActiveColor !important; }
+}
+
+#main-navigation ul {
+  margin-left:3px;
 }
 
 
@@ -582,7 +586,7 @@ nav ul, nav ol { margin: 0; }
   margin: auto;
   width: auto;
   max-width: @siteWidth;
-  position: relative;
+  position: fixed;
   padding: @navSpacing 0;
 
   nav {
@@ -779,7 +783,7 @@ span.delimiter {
 
 #canvas-wrapper,
 #canvas {
-  width: 100%;
+  width: 960px;
   margin: 0 auto;
   padding: 0;
   -o-box-sizing: border-box;
@@ -838,7 +842,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
   height: 100%;
 }
 
-#banner-area-wrapper {  }
+#banner-area-wrapper { }
 #banner-area {
   height: auto;
   padding-top: @bannerSpacing;
