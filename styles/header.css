@@ -1,0 +1,183 @@
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 85%;
+	background: #fff;
+	z-index: 9999;
+	height: 90px;
+	-webkit-transition: height 0.1s;
+	-moz-transition: height 0.1s;
+	transition: height 0.1s;
+}
+
+.header .header-inner {
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.header h1,
+.header nav, a.header-logo {
+	display: inline-block;
+	position: relative;
+}
+
+.navbar-nav ul {
+	height: 90px !important;
+}
+
+.navbar-nav a {
+	line-height:55px !important;
+}
+
+.navbar-toggle {
+	float:left !important;
+}
+
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.header h1,
+.header nav a {
+	line-height: 90px;
+}
+
+/*.header h1 {
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: right;
+}*/
+
+a.header-brand {
+	z-index:10000;
+	margin-top:25px;
+	margin-right:25px;
+	background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c852e4b08c8c8a72eaf4/1435027538180/basement.png) no-repeat;
+	background-size:contain !important;
+	height: 230px;
+	width: 230px;
+	float: right;
+}
+
+a.header-brand.scroll-shrink {
+	background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
+	height: 60px;
+	width: 60px;
+	margin-top:5px;
+}
+
+
+.header nav {
+	background:#fff !important;
+	float: left;
+}
+
+.header nav ul {
+	background:#fff !important;
+	width:auto;
+}
+
+
+.header nav a {
+	color: #000 !important;
+	font-weight: 700;
+	margin: 0 0 0 20px;
+	font-size: 1em;
+}
+
+.header nav a:hover {
+	color: #666 !important;
+}
+
+/* Transitions and class for reduced height */
+.header nav a, .header-brand {
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.header.header-shrink {
+	height: 90px;
+	box-shadow: 0px 2px 5px #aaa;
+}
+
+.header.header-shrink nav a {
+	line-height: 90px;
+}
+
+.header.header-shrink h1 {
+	font-size: 2em;
+}
+
+
+@media only screen and (max-width: 1120px) {
+	a.header-brand {
+		background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
+		height: 60px;
+		width: 60px;
+		margin-top:15px;
+	}
+}
+
+@media screen and (max-width:960px) {
+	.header {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 55em) {
+
+	.header {
+		width: 100% !important;
+	}
+
+	.header .header-inner {
+		width: 100%;
+	}
+
+	.header h1,
+	.header nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: left;
+	}
+
+	.header h1,
+	.header nav a {
+		line-height: 115px;
+	}
+
+	.header nav a {
+		margin: 0 10px;
+	}
+
+	.header.header-shrink h1,
+	.header.header-shrink nav a {
+		line-height: 45px;
+	}
+
+	.header.header-shrink h1 {
+		font-size: 2em;
+	}
+
+	.header.header-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.header nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.header nav a,
+	.header.header-shrink nav a {
+		line-height: 1;
+	}
+}

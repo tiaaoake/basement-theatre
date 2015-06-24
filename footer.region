@@ -10,12 +10,25 @@
 		        <squarespace:block-field id="footer-blocks" columns="12" label="Footer Content" />
 		      </div>
 		    </div><!-- page-footer-wrapper -->
-		  
+
 
 		  </div>
 		</div> <!-- canvas-wrapper -->
 
 		{squarespace-footers}
+
+		<!-- collapsing logo -->
+    <script>
+    	var $logo = $("a.header-brand");
+    	$(window).scroll(function () {
+    		var e = $(this).scrollTop();
+    		if (e > 90) {
+    				$logo.addClass('scroll-shrink');
+    		} else {
+    				$logo.removeClass('scroll-shrink');
+    		}
+    	});
+    </script>
 
 	</body>
 </html>
