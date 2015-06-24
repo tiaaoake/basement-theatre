@@ -45,5 +45,6 @@ a.header-brand.scroll-shrink {
 		height: 60px;
 		width: 60px;
 		margin-top:15px;
+		position:absolute;
 	}
 }
