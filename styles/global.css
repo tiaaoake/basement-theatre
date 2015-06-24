@@ -883,6 +883,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
   max-width:960px;
   margin: 0 auto !important;
 }
+
 #banner-area {
   height: auto;
   padding-top: @bannerSpacing;
