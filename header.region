@@ -56,6 +56,7 @@
 					      	                  {.end} -->
 
 					    		<squarespace:navigation navigationId="mainNav" template="main-navigation" />
+                  <a class="header-brand" href="#"></a>
 
 					      {.end}
 

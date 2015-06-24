@@ -1,7 +1,26 @@
+/* INIT CUSTOM FONTS */
 
-/* FIVE */
+@font-face {
+  font-family: 'gt haptik';
+  src: url("http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5589fe20e4b01285c1bc69e6/1435106848181/GT-Haptik-Regular-2.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'knockout';
+  src: url("http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5589fb95e4b001b8b746ff87/1435106197560/Knockout-48.otf") format('opentype');
+}
+@font-face {
+  font-family: 'rotalics';
+  src: url("http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5589fe12e4b01285c1bc69b1/1435106834515/GT-Haptik-Bold-Rotalic.ttf") format('truetype');
+}
 
-// FIVE TWEAK OPTIONS
+h1, h2 {
+  font-family: 'knockout', bebas neue, sans-serif !important;
+}
+
+h3, h4, h5, h6, p, a {
+  font-family: 'gt haptik', helvetica, sans-serif !important;
+}
+
 
 /* SITE WIDE */
 
