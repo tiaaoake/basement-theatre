@@ -855,6 +855,10 @@ span.delimiter {
   position: relative;
 }
 
+#page-footer {
+  background:#000 !important;
+}
+
 #page-header-wrapper {
   background-color: @hdrBgColor;
 }
