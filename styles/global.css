@@ -451,8 +451,12 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 
 }
 
+#page-body-wrapper.full-width {
+  background: @basement-blue;
+}
+
 #page-body-wrapper.one-sidebar {
-  background: rgb(205,45,108);
+  background: @basement-red;
 }
 
 .sqs-block-horizontalrule hr {
