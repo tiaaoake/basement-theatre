@@ -7,7 +7,12 @@
 #mobile-navigation {
   position:fixed !important;
   top:0;
-}
+  z-index:10000 !important;
+
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+  }
 
 #mobile-navigation {
   .nav-font;
