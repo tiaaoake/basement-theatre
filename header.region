@@ -28,6 +28,8 @@
 		<squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
 		{.end}
 
+    <a class="header-brand" href="#"></a>
+
 	  <div id="canvas-wrapper">
 	  	<div id="canvas">
 
@@ -56,11 +58,12 @@
 					      	                  {.end} -->
 
 					    		<squarespace:navigation navigationId="mainNav" template="main-navigation" />
-                  <a class="header-brand" href="#"></a>
+
 
 					      {.end}
 
 				    	</div>
+
 				    </div><!-- navigation-top -->
 
 						<div id="banner-area-wrapper">
