@@ -573,6 +573,21 @@ nav ul, nav ol { margin: 0; }
 /* NAVIGATION
 ************************************************/
 
+.navbar-wrapper {
+  margin: 0 auto;
+  background: #fff;
+  position:fixed !important;
+  top: 0;
+  z-index:10000;
+  width:100%;
+  display:inline;
+  vertical-align:center;
+  /* -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.5); */
+}
+
+
 .horizontal-navigation-bar {
   nav > ul > li,
   nav > ul > li > a { line-height: 1.2em;}
@@ -585,7 +600,8 @@ nav ul, nav ol { margin: 0; }
   line-height: 1 !important;
   margin: auto;
   width: auto;
-  position: relative;
+  position: fixed;
+  float:none !important;
   padding: @navSpacing 0;
 
   nav {
@@ -783,7 +799,10 @@ span.delimiter {
 #canvas-wrapper,
 #canvas {
   width: 960px;
-  margin: 0 auto;
+  margin-top:70px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
   padding: 0;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
