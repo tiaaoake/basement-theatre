@@ -900,7 +900,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 #page-body {
   width: 100% !important;
   padding: 0 1%;
-  max-width:none !important;
+  max-width:960px !important;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
