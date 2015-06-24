@@ -53,9 +53,4 @@ a.header-brand.scroll-shrink {
 		margin-top:15px;
 	}
 
-	a.header-brand.scroll-shrink {
-		-webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.5);
-		-moz-box-shadow:    0px 1px 1px 0px rgba(50, 50, 50, 0.5);
-		box-shadow:         0px 1px 1px 0px rgba(50, 50, 50, 0.5);
-	}
 }
