@@ -861,7 +861,9 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
   height: 100%;
 }
 
-#banner-area-wrapper { }
+#banner-area-wrapper {
+  width:960px;
+}
 #banner-area {
   height: auto;
   padding-top: @bannerSpacing;
