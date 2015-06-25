@@ -428,10 +428,10 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 }
 
 #page-body-wrapper {
-  background: rgb(245,245,245) !important;
-  -webkit-box-shadow: @box-shadow-top;
-  -moz-box-shadow: @box-shadow-top;
-  box-shadow: @box-shadow-top;
+  background: rgba(245,245,245,1) !important;
+  -webkit-box-shadow: @box-shadow-top !important;
+  -moz-box-shadow: @box-shadow-top !important;
+  box-shadow: @box-shadow-top !important;
 }
 
 
