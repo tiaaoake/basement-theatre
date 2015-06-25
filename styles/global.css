@@ -1,7 +1,7 @@
 /* SITE WIDE */
 
 //tweak: { type: 'color', title: 'Site Background', target: 'body', category: 'Site Wide' }
-@bgColor: #F7F7F7;
+@bgColor: #fff;
 
 //tweak: { type: 'image', title: 'Site Background Image', target: 'body', category: 'Site Wide' }
 .bg-image {
