@@ -2,7 +2,7 @@ a.header-brand {
 	z-index:10001;
 	margin-top:25px;
 	margin-right:25px;
-	background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c852e4b08c8c8a72eaf4/1435027538180/basement.png) no-repeat;
+	background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c852e4b08c8c8a72eaf4/1435027538180/basement.png) no-repeat;
 	background-size:contain !important;
 	position:fixed;
 	top: 0;
@@ -13,7 +13,7 @@ a.header-brand {
 }
 
 a.header-brand.scroll-shrink {
-	background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
+	background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
 	height: 60px;
 	width: 60px;
 }
@@ -26,13 +26,13 @@ a.header-brand.scroll-shrink {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 	a.header-brand {
-		background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
+		background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
 		height: 30px;
 		width: 30px;
 		margin-top:15px;
 	}
 	a.header-brand.scroll-shrink {
-		background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
+		background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
 		height: 30px;
 		width: 30px;
 		margin-top:15px;
@@ -47,7 +47,7 @@ a.header-brand.scroll-shrink {
 @media only screen and (min-width: 480px) and (max-width: 1120px) {
 
 	a.header-brand {
-		background: url(http://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
+		background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
 		height: 60px;
 		width: 60px;
 		margin-top:15px;
