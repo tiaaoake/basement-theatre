@@ -838,7 +838,7 @@ span.delimiter {
 }
 
 #page-header-wrapper {
-  background-color: @hdrBgColor;
+  background-color: #ffffff;
 }
 body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-banner) #page-header-wrapper  {
   .hdr-bg-image;
