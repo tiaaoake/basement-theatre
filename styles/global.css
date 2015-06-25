@@ -1,7 +1,7 @@
 /* SITE WIDE */
 
 //tweak: { type: 'color', title: 'Site Background', target: 'body', category: 'Site Wide' }
-@bgColor: #f5f5f5;
+@bgColor: #F7F7F7;
 
 //tweak: { type: 'image', title: 'Site Background Image', target: 'body', category: 'Site Wide' }
 .bg-image {
@@ -172,7 +172,7 @@
 /* MAIN CONTENT */
 
 //tweak: { type: 'color', title: 'Canvas Background', target: '#canvas', category: 'Main Content' }
-@cnvsBgColor: #f5f5f5;
+@cnvsBgColor: #FFFFFF;
 
 //tweak: { type: 'image', title: 'Canvas Background Image', target: '#canvas', category: 'Main Content' }
 .cnvs-bg-image {
