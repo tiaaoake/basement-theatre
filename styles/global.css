@@ -460,6 +460,12 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 }
  */
 
+/* EVENT SPECIFIC STYLES */
+#event-full-width {
+  margin: 0 auto;
+  max-width:960px;
+}
+
 
 /* FONTS & VERTICAL GRID
 ***********************************************/
