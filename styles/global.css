@@ -881,7 +881,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 }
 
 #content-wrapper {
-  width: 100%;
+  max-width:960px;
   margin: auto;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
