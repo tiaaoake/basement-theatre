@@ -836,7 +836,7 @@ span.delimiter {
   position: relative;
 }
 
-#page-footer-wrapper, #page-footer {
+.page-footer-wrapper, #page-footer {
   background:#000 !important;
 }
 
