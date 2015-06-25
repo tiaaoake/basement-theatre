@@ -6,15 +6,17 @@
 	  {.end}
     {squarespace-headers}
 
+    <!--jQuery 2.0-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/jquery-2.0.0.min.js"><\/script>')</script>
+
     <!-- imported javascript files -->
     <squarespace:script src="site.js" />
     <squarespace:script src="collapse.js" combo="true" />
     <squarespace:script src="transition.js" combo="true" />
     <squarespace:script src="jquery.flip.js" combo="true" />
 
-    <!--jQuery 2.0-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="scripts/jquery-2.0.0.min.js"><\/script>')</script>
+
 
     <!-- bootstrap 3.0
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
