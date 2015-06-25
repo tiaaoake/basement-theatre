@@ -745,10 +745,6 @@ span.delimiter {
   color: @bordersColor;
 }
 
-.main-content {
-  margin: 0 auto;
-  max-width: 960px;
-}
 
 .main-content span.delimiter {
   padding: 0 0.5em 0 0.7em;
@@ -876,8 +872,6 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 
 #page-body {
   padding: 0 1%;
-  margin: 0 auto !important;
-  max-width:960px !important;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
