@@ -468,7 +468,9 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 
 #page-body.event {
   background-color: #d6009e;
+  color:#fff;
 }
+
 
 
 /* FONTS & VERTICAL GRID
