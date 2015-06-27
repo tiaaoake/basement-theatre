@@ -187,13 +187,13 @@
 											<div class="col sqs-col-1 span-1">
 												<div class="sqs-block">
 													<div class="sqs-block-content" id="eventDetails">
-														<h2>DATE: <span>{item.customContent.dates}</span></h2>
-														<h2>SHOWTIME: <span>{item.customContent.showtime}</span></h2>
-														<h2>RUNTIME: <span>{item.customContent.runtime}</span</h2>
-														<h2>VENUE: <span>{item.customContent.venue}</span</h2>
-														<h2>PRICES: <span>{item.customContent.title}</span></h2>
-														<h2>DIRECTED BY: <span>{item.customContent.director}</span></h2>
-														<h2>CAST: <span>{item.customContent.cast}</span></h2>
+														<h2>DATE: <span>{item.customContent.dates}</span><br>
+														SHOWTIME: <span>{item.customContent.showtime}</span><br>
+														RUNTIME: <span>{item.customContent.runtime}</span><br>
+														VENUE: <span>{item.customContent.venue}</span><br>
+														PRICES: <span>{item.customContent.title}</span><br>
+														DIRECTED BY: <span>{item.customContent.director}</span><br>
+														CAST: <span>{item.customContent.cast}</span></h2>
 													</div>
 												</div>
 											</div>
