@@ -76,20 +76,20 @@
               <div class="banner-overlay"></div>
 
               <!-- // logo or site title markup in banner area -->
-              {.section website} {.if logoImageUrl}
+              {.section website} <!--{.if logoImageUrl}-->
               <div id="banner-wrapper" data-content-field="site-title">
                 <a href="/" rel="bookmark">
-                  <img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /> {.section siteTagLine}
+                  <img id="banner" src="{item.customContent.banner}" alt="{siteTitle}" /> {.section siteTagLine}
                   <p id="logo-tagline" class="logo-subtitle">{siteTagLine}</p>{.end}
                 </a>
               </div>
-              {.or}
+              <!--{.or}-->
               <div id="site-title-wrapper" class="js-text-shrink" data-content-field="site-title">
                 <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
                 {.section siteTagLine}
                 <p id="site-tagline" class="site-subtitle">{siteTagLine}</p>{.end}
               </div>
-              {.end} {.end}
+              <!--{.end}--> {.end}
 
               <!-- // page title markup in banner area -->
               {.section collection}
