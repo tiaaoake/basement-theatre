@@ -191,7 +191,7 @@
 														SHOWTIME: <span>{item.customContent.showtime}</span><br>
 														RUNTIME: <span>{item.customContent.runtime}</span><br>
 														VENUE: <span>{item.customContent.venue}</span><br>
-														PRICES: <span>{item.customContent.title}</span><br>
+														PRICES: <span>{item.customContent.prices}</span><br>
 														DIRECTED BY: <span>{item.customContent.director}</span><br>
 														CAST: <span>{item.customContent.cast}</span></h2>
 													</div>

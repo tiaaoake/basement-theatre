@@ -1,7 +1,13 @@
 /* event-specific styles */
 
 .entry-title a {
+  font-family: 'Knockout-49', bebas neue, sans-serif !important;
   color: #fff !important;
+}
+
+#eventDetails > h2 {
+  font-size:2em;
+  font-family: 'Knockout-47', bebas neue, sans-serif !important;
 }
 
 #eventDetails > h2 span {
