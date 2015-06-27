@@ -3,3 +3,7 @@
 .entry-title a {
   color: #fff !important;
 }
+
+#eventDetails > span {
+  color:#fff !important;
+}
