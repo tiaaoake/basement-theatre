@@ -6,4 +6,5 @@
 
 #eventDetails > h2 span {
   color:#fff !important;
+  text-transform:uppercase !important;
 }
