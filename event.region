@@ -158,6 +158,8 @@
 							    </div>
 							    {.end}{.end}{.end}
 
+									<div class="sqs-block spacer-block sqs-block-spacer" data-block-type="21" id="block-yui_3_17_2_5_1435394724012_6670" data-block-json="{&quot;vSize&quot;:1,&quot;aspectRatio&quot;:null,&quot;hSize&quot;:null,&quot;floatDir&quot;:null}"><div class="sqs-block-content">&nbsp;</div></div>
+
 							    <div class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" data-edit-main-image="Page Banner">
 										{squarespace.main-content}
 									</div>
