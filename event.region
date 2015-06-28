@@ -66,12 +66,13 @@
           <div id="banner-area-wrapper">
 						<div id="banner-area">
 
-              <!-- // page thumbnail image as banner image -->
+							<!-- // page thumbnail image as banner image -->
               {.section collection} {.section mainImage}
               <div id="page-thumb" class="content-fill">
                 <img {@|image-meta} />
               </div>
               {.end} {.end}
+
 
               <div class="banner-overlay"></div>
 
@@ -98,7 +99,7 @@
               <div id="page-title-wrapper" class="js-text-shrink" data-edit-main-image="Page Banner">
                 {.if title}
                 <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end}
-								{.section siteTagLine}
+								{.if title}
                 <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p>{.end}
               </div>
               {.end}
