@@ -1,27 +1,22 @@
-<squarespace:query collection="baseEvent">
-<div class="row">
-    <div class="col-md-12">
-      <div class="col-md-4 col-xs-12">
-        {.repeated section items}
-        <div class="whats-on-item summary-item">
-          <div class="whats-on-thumb summary-thumbnail" id="card1">
-            <div class="front">
-              <h2>{item.customContent.tagline}</h2>
-              <img src="{.section item}{.if item.customContent.bannerImg}{assetUrl}{.end}{.end}">
-            </div>
-            <div class="back">
-              <p>{item.customContent.tagline}</p>
-            </div>
-          </div>
-          <div class="whats-on-buttons">
-            <hr>
-            <button class="col-md-6 btn info" id="flip-btn-1">MORE INFO</button>
-            <button class="col-md-6 btn book">BOOK NOW</button>
-          </div>
-        </div>
-        {.end}
+
+<div class="col-md-4 col-xs-12">
+=
+  <div class="whats-on-item">
+    <div class="whats-on-thumb" id="card1">
+      <div class="front">
+        <img>
+      </div>
+      <div class="back">
+        {.section tagline}<p>{item.customContent.tagline}</p>{.end}
       </div>
     </div>
-  </div>
+    <div class="event-title">
+
+    <h2>{item.customContent.title}</h2>
+    </div>
+    <div class="whats-on-buttons">
+      <hr>
+      <button class="col-md-12 btn book">BOOK NOW</button>
+    </div>
+  </div>=
 </div>
-</squarespace:query>

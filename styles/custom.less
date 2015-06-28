@@ -121,7 +121,7 @@ hr{
 
 .whats-on-item {
   background: #fff;
-  height: 380px;
+  height: 400px;
   padding-top: 10px;
   padding-left:10px;
   padding-right:10px;
@@ -133,10 +133,38 @@ hr{
   height:310px;
 }
 
+.front {
+  width:310px;
+  height: 310px;
+  background: #ddd;
+}
+
 
 .back {
-  background:#000;
-  height:280px;
+  width:310px;
+  height: 310px;
+  opacity: 0;
+  position: absolute;
+  top: 38px;
+  left: 35px;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.back p {
+  margin: 10px;
+  color: #fff;
+}
+
+.whats-on-thumb:hover .back {
+  opacity:1;
+  background-color:rgba(0,0,0,.6);
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 
 
