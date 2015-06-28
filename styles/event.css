@@ -27,3 +27,7 @@
   right: 0;
   background-color: rgba(56,56,56,0.6);
 }
+
+section#comments > .header-controls > .controls > .comment-count > span {
+  color:#fff !important;
+}
