@@ -859,7 +859,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 }
 
 #page-thumb {
-  /* display:none; */
+  display:none;
   height: 100%;
 }
 
