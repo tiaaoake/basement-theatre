@@ -63,17 +63,22 @@
       <div id="page-header-wrapper">
         <div id="page-header">
 
-          <div id="banner-area-wrapper">
-						<div id="banner-area">
+          <div id="banner-area-wrapper" >
+
+						<div id="banner-area" class="overlay" style="background:url('{.section item}{.if item.customContent.bannerImg}{assetUrl}{.end}{.end}') no-repeat; background-position: center top;">
 
               <!-- // page thumbnail image as banner image -->
               {.section collection} {.section mainImage}
               <div id="page-thumb" class="content-fill">
-                <img {@|image-meta} />
+                {.if item.customContent.bannerImg}
+                <img {assetUrl}?format=original />
+                {.end}
               </div>
               {.end} {.end}
 
-              <div class="banner-overlay"></div>
+
+              <div class="banner-overlay">
+              </div>
 
               <!-- // logo or site title markup in banner area -->
               {.section website} {.if logoImageUrl}
