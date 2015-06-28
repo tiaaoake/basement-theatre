@@ -65,7 +65,7 @@
 
           <div id="banner-area-wrapper" >
 
-						<div id="banner-area" class="overlay" style="background:url('{.section item}{.if item.customContent.bannerImg}{assetUrl}{.end}{.end}') no-repeat; background-position: center top;">
+						<div id="banner-area" class="overlay" style="background:url('{.section item}{.if item.customContent.bannerImg}{assetUrl}{.end}{.end}') no-repeat; background-size:cover; background-position: center top;">
 
               <!-- // page thumbnail image as banner image -->
               {.section collection} {.section mainImage}
