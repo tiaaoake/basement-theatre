@@ -3,11 +3,12 @@
   <div class="whats-on-item">
     <div class="whats-on-thumb sqs-row" id="card1">
       <div class="front content-fill">
+        <div class="excerpt">
+          <p>{excerpt}</p>
+        </div>
         <img src="{bannerImg}{assetUrl}">
       </div>
-      <div class="back">
-        <p>{excerpt}</p>
-      </div>
+
     </div>
     <div class="event-title row sqs-row">
 
@@ -17,7 +18,9 @@
     </div>
     <div class="whats-on-buttons">
       <button class="sqs-col-6 btn info">MORE INFO</button>
+      <form action="{fullUrl}">
       <button class="sqs-col-6 btn book">BOOK NOW</button>
+      </form>
     </div>
   </div>
 </div>{.end}
