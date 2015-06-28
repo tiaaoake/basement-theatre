@@ -6,7 +6,7 @@
 
     <div class="row">
         <div class="col-md-12">
-          <squarespace:query collection="baseEvent" limit="3">
+          <squarespace:query collectionId="558f70e5e4b0c84f9abf720c" limit="3">
                 {@|apply whats-on-item.block}
           </squarespace:query>
         </div>
