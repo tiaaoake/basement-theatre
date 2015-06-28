@@ -4,11 +4,11 @@
 <div class="row sqs-row">
   <div class="sqs-col sqs-col-12">
 
-    <div class="gridwall js-collection -clear" data-collection="/whats-on/"></div>
+    <section class=" js-collection -clear" data-collection="/whats-on/"></section>
 
-    <div class="gridwall js-collection-list -clear" data-collection="whats-on">
+    <section class="js-collection-list -clear">
           {@|apply whats-on-item.block}
-    </div>
+    </section>
   </div>
 </div>
 
