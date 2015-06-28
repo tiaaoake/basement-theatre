@@ -70,12 +70,16 @@
 
               <!-- // logo or site title markup in banner area -->
 
-              <div id="banner-wrapper" data-content-field="site-title" data-collection-id="{collection.id}>
+							{.section collection}
+              <div id="banner-wrapper" data-content-field="site-title" data-collection-id="{event}">
+								{.if banner_image}
                 <a href="/" rel="bookmark">
                   <img id="banner" src="{item.customContent.banner_image}" alt="{siteTitle}" /> {.section siteTagLine}
-                  <p id="logo-tagline" class="logo-subtitle">{siteTagLine}</p>{.end}
+                  <p id="logo-tagline" class="logo-subtitle">{item.customContent.tagline}</p>{.end}
                 </a>
+								{.end}
               </div>
+							{.end}
 
               <div id="site-title-wrapper" class="js-text-shrink" data-content-field="site-title">
                 <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{event.title}</a></h1>
@@ -89,7 +93,7 @@
               <div id="page-title-wrapper" class="js-text-shrink" data-collection-id="{collection.id}" data-edit-main-image="Page Banner">
                 {.if title}
                 <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end} {.if description}
-                <div id="page-description" class="page-description">{event.tagline}</div>{.end}
+                <div id="page-description" class="page-description">{item.customContent.tagline}</div>{.end}
               </div>
               {.end}
 
