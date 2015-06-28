@@ -64,7 +64,10 @@
         <div id="page-header">
 
           <div id="banner-area-wrapper">
+
+
 						<div id="banner-area">
+
 
 							<!-- // page thumbnail image as banner image -->
               {.section collection} {.section mainImage}
@@ -76,8 +79,10 @@
 
               <div class="banner-overlay"></div>
 
-              <!-- // logo or site title markup in banner area -->
-              {.section website} {.if logoImageUrl}
+
+
+              <!-- // logo or site title markup in banner area
+              {.section collection} {.if logoImageUrl}
               <div id="banner-wrapper" data-content-field="site-title">
                 <a href="/" rel="bookmark">
                   <img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /> {.section siteTagLine}
@@ -86,20 +91,23 @@
               </div>
               {.or}
               <div id="site-title-wrapper" class="js-text-shrink" data-content-field="site-title">
-                <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
-                {.section siteTagLine}
-                <p id="site-tagline" class="site-subtitle">{siteTagLine}</p>{.end}
+                              {.if title}
+                <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end}
+                              {.if title}
+                <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p>{.end}
               </div>
-              {.end} {.end}
+              {.end} {.end} -->
 
 
 
               <!-- // page title markup in banner area -->
               {.section collection}
+
               <div id="page-title-wrapper" class="js-text-shrink" data-edit-main-image="Page Banner">
                 {.if title}
+                <img id="banner" src="{item.customContent.bannerImg}?format=original" alt="{item.customContent.title}" />
                 <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end}
-								{.if title}
+                              {.if title}
                 <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p>{.end}
               </div>
               {.end}
