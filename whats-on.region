@@ -6,7 +6,7 @@
 
     <div class="row">
         <div class="col-md-12">
-          <squarespace:query collection="Basement Events" limit="3">
+          <squarespace:query collection="whats-on" limit="3">
                 {@|apply whats-on-item.block}
           </squarespace:query>
         </div>
