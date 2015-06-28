@@ -1,0 +1,37 @@
+
+<section class="whats-on sqs-layout sqs-grid-12 columns-12">
+
+<div class="whats-on-title">
+  <h1 class="text-align-center">WHAT'S ON</h1>
+</div>
+
+<div class="row sqs-row">
+  <div class="sqs-col sqs-col-12">
+    <div class="show-grid js-collection -clear" data-collection="whats-on">
+          {@|apply whats-on-item.block}
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+getCollection = function ( $elem ) {
+    $.ajax({
+        url: $elem.data( "collection" ),
+        type: "GET",
+        dataType: "html"
+
+    })
+    .done(function ( html ) {
+        var $html = $( html ),
+            $collection = $html.find( ".js-collection-list" ),
+            $tiles = $collection.children();
+
+        $elem.append( $tiles );
+    })
+    .fail(function (  xhr, status, error  ) {
+        console.log( "fail: ", error );
+    });
+},
+</script>
