@@ -77,7 +77,7 @@
               {.end} {.end}
 
 
-              <div class="banner-overlay">
+              <div class="banner-overlay-event">
               </div>
 
               <!-- // logo or site title markup in banner area -->
@@ -103,8 +103,10 @@
               <div id="page-title-wrapper" class="js-text-shrink" data-edit-main-image="Page Banner">
                 {.if title}
                 <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end}
-								{.if title}
-                <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p>{.end}
+								{.if item.customContent.tagline}
+                <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p> {.end}
+                {.if title}
+                <p id="site-tagline" class="site-subtitle">{item.customContent.dates} | {item.customContent.times}</p>{.end}
               </div>
               {.end}
 

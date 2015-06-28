@@ -66,6 +66,9 @@
           <div id="banner-area-wrapper">
             <div id="banner-area">
 
+
+
+
               <!-- // page thumbnail image as banner image -->
               {.section collection} {.section mainImage}
               <div id="page-thumb" class="content-fill">
@@ -73,7 +76,8 @@
               </div>
               {.end} {.end}
 
-              <div class="banner-overlay"></div>
+            <div class="banner-overlay-event"></div>
+
 
               <!-- // logo or site title markup in banner area -->
               {.section website} {.if logoImageUrl}
@@ -99,6 +103,8 @@
                 <div id="page-description" class="page-description">{description}</div>{.end}
               </div>
               {.end}
+
+
 
             </div>
           </div>
