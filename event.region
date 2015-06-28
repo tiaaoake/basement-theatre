@@ -79,6 +79,10 @@
 
               <div class="banner-overlay"></div>
 
+              <div id="banner-wrapper" data-collection-id="{collection.id}">
+                {.if item}
+                <img id="banner" src="{bannerImg}?format=original" alt="{item.customContent.title}" />{.end}
+              </div>
 
 
               <!-- // logo or site title markup in banner area
@@ -105,9 +109,8 @@
 
               <div id="page-title-wrapper" class="js-text-shrink" data-edit-main-image="Page Banner">
                 {.if title}
-                <img id="banner" src="{item.customContent.bannerImg}?format=original" alt="{item.customContent.title}" />
                 <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end}
-                              {.if title}
+                {.if title}
                 <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p>{.end}
               </div>
               {.end}
