@@ -1,22 +1,18 @@
 {.repeated section items}
-<div class="col-md-4 col-xs-12">
-
+<div class="col-md-4 col-xs-12 whats-on-wrapper">
   <div class="whats-on-item">
-
     <div class="whats-on-thumb" id="card1">
-      <div class="front">
-        <img>
+      <div class="front col-md-12">
+        <img src={bannerImg}{assetUrl}>
       </div>
-      <div class="back">
-        <p>{item.customContent.tagline}</p>
+      <div class="back col-md-12">
+        <p>{excerpt}</p>
       </div>
     </div>
     <div class="event-title">
-
-    <h2>{item.customContent.title}</h2>
+    <h2>{title}</h2>
     </div>
     <div class="whats-on-buttons">
-      <hr>
       <button class="col-md-12 btn book">BOOK NOW</button>
     </div>
   </div>

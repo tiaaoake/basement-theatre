@@ -110,10 +110,6 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
 
 
 /* new whats-on summary block styles */
-hr{
-  margin: 10px !important;
-  border: 1px #003399 !important;
-}
 
 .whats-on {
   background: #003399 !important;
@@ -121,7 +117,6 @@ hr{
 
 .whats-on-item {
   background: #fff;
-  height: 400px;
   padding-top: 10px;
   padding-left:10px;
   padding-right:10px;
@@ -130,23 +125,24 @@ hr{
 }
 
 .whats-on-thumb {
-  height:310px;
+  max-height:310px;
 }
 
+
 .front {
-  width:310px;
-  height: 310px;
+  max-width:310px;
+  height: 100%;
   background: #ddd;
 }
 
 
 .back {
-  width:310px;
-  height: 310px;
+  max-width:310px;
+  height: 100%;
   opacity: 0;
   position: absolute;
-  top: 20px;
-  left: 35px;
+  top:-100%;
+  left: 0;
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
