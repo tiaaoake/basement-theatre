@@ -1,19 +1,23 @@
 {.repeated section items}
-<div class="col-md-4 col-xs-12 whats-on-wrapper">
+<div class="sqs-col sqs-col-4 whats-on-wrapper">
   <div class="whats-on-item">
-    <div class="whats-on-thumb" id="card1">
-      <div class="front col-md-12">
-        <img src={bannerImg}{assetUrl}>
+    <div class="whats-on-thumb sqs-row" id="card1">
+      <div class="front content-fill">
+        <img src="{bannerImg}{assetUrl}">
       </div>
-      <div class="back col-md-12">
+      <div class="back">
         <p>{excerpt}</p>
       </div>
     </div>
-    <div class="event-title">
-    <h2>{title}</h2>
+    <div class="event-title row sqs-row">
+
+      <h2><a href="{fullUrl}">{title}</a> | {customContent.times}</h2>
+      <hr>
+      <h3>{customContent.dates} | {customContent.venue}</h3>
     </div>
     <div class="whats-on-buttons">
-      <button class="col-md-12 btn book">BOOK NOW</button>
+      <button class="sqs-col-6 btn info">MORE INFO</button>
+      <button class="sqs-col-6 btn book">BOOK NOW</button>
     </div>
   </div>
 </div>{.end}

@@ -17,10 +17,6 @@
   <squarespace:script src="transition.js" combo="true" />
   <squarespace:script src="jquery.flip.js" combo="true" />
 
-  <!-- bootstrap 3 CDN -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 
 
 </head>

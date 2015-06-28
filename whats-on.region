@@ -1,20 +1,16 @@
 
-<section class="whats-on">
+<section class="whats-on sqs-layout sqs-grid-12 columns-12">
 
-  <!-- Page Content -->
-  <div class="container">
+<div class="whats-on-title">
+  <h1 class="text-align-center">WHAT'S ON</h1>
+</div>
 
-    <div class="row">
-        <div class="col-md-12">
-          <squarespace:query collection="whats-on" limit="3">
-                {@|apply whats-on-item.block}
-          </squarespace:query>
-        </div>
-
-    </div>
-    <!-- /.row -->
-
+<div class="row sqs-row">
+  <div class="sqs-col sqs-col-12">
+    <squarespace:query collection="whats-on" limit="3">
+          {@|apply whats-on-item.block}
+    </squarespace:query>
   </div>
-  <!-- /.container-->
+</div>
 
 </section>

@@ -53,8 +53,13 @@ h1#page-title {
 
 /* side-wide width definitions */
 
-.sqs-layout, .sqs-layout > .sqs-row {
+.sqs-layout {
   width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.sqs-layout > .sqs-row {
+  max-width: 960px !important;
   margin: 0 auto !important;
 }
 
@@ -90,12 +95,12 @@ FRONT PAGE CUSTOM STYLES
   box-shadow: @box-shadow-top;
 }
 
-#block-yui_3_17_2_2_1431400265136_26050 h1, #block-yui_3_17_2_6_1433978922996_19932 h2 { /*whats-on, coming soon*/
+.whats-on-title h1 , #block-yui_3_17_2_6_1433978922996_19932 h2 { /*whats-on, coming soon*/
   font-family: 'Knockout-49', bebas neue, sans-serif !important;
   color:#fff !important;
 }
 
-#block-yui_3_17_2_2_1431400265136_26050 h1 { font-size:5em !important;}
+.whats-on-title h1 { font-size:5em !important; margin-top:.7em;}
 
 #yui_3_17_2_2_1435150511307_489.summary-item {
   background: #000 !important;
@@ -112,6 +117,7 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
 /* new whats-on summary block styles */
 
 .whats-on {
+  min-height: 500px !important;
   background: #003399 !important;
 }
 
@@ -125,24 +131,41 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
 }
 
 .whats-on-thumb {
-  max-height:310px;
+  max-height:414px;
 }
 
+.event-title h2 a, .event-title h2, .event-title h3  {
+  font-family: 'Knockout-47', bebas neue, sans-serif !important;
+  text-transform:uppercase;
+  color:#039;
+}
+
+.event-title h2 a, .event-title h2 {
+  margin-top: 1em;
+  font-size:2em;
+}
+
+.event-title h3 {
+  font-size:2em;
+}
 
 .front {
-  max-width:310px;
-  height: 100%;
-  background: #ddd;
+  max-width:414px;
+  max-height:310px;
+  overflow:hidden;
+  top: 0;
+  left: 0;
 }
 
+.front img {
+  max-height:310px;
+
+}
 
 .back {
-  max-width:310px;
-  height: 100%;
+  max-width:414px;
   opacity: 0;
   position: absolute;
-  top:-100%;
-  left: 0;
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
@@ -154,7 +177,7 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
   color: #fff;
 }
 
-.whats-on-thumb:hover .back {
+.whats-on-thumb:hover .back, button.info:hover .back {
   opacity:1;
   background-color:rgba(0,0,0,.6);
   -webkit-transition: opacity 0.2s linear;
@@ -167,6 +190,7 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
 button {
   border-radius: 0px !important;
   letter-spacing: 1px;
+  line-height:2em;
 }
 
 button:hover {
@@ -174,11 +198,13 @@ button:hover {
 }
 
 button.info {
-  background: #003399;
+  background: #fff;
+  border: 1px solid #039;
+  color:#039;
 }
 
 button.book {
-  border: 1px solid #003399;
-  background: #fff;
-  color: #003399;
+  font-size:1em;
+  background: #039;
+  color: #fff;
 }
