@@ -1,5 +1,5 @@
 {.repeated section items}
-          {.if customContent.isFeatured}
+{.if customContent.isFeatured}
 <div class="sqs-col sqs-col-4 whats-on-wrapper">
   <div class="whats-on-item">
     <div class="whats-on-thumb sqs-row" id="card1">
