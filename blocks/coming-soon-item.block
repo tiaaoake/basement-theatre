@@ -2,24 +2,13 @@
 {.if customContent.isFeatured}
 
 {.or}
-<div class="sqs-col sqs-col-3 whats-on-wrapper">
-  <div class="whats-on-item">
-    <div class="whats-on-thumb sqs-row" id="card1">
-      <div class="front content-fill" id="post-image">
-        <img src="{bannerImg}{assetUrl}">
-      </div>
+<div class="sqs-col sqs-col-3">
+  <div class="coming-soon-thumb sqs-row" id="card1">
+    <div class="content-fill" id="post-image">
+      <img src="{bannerImg}{assetUrl}">
     </div>
-
-    <div class="event-title row sqs-row">
-      <h2><a href="{fullUrl}">{title}</a> | {customContent.times}</h2>
-      <hr>
-      <h3>{customContent.dates} | {customContent.venue}</h3>
-    </div>
-    <div class="whats-on-buttons">
-      <button class="sqs-col-6 btn info">MORE INFO</button>
-      <form action="{fullUrl}">
-      <button class="sqs-col-6 btn book">BOOK NOW</button>
-      </form>
-    </div>
+    <h2><a href="{fullUrl}">{title}</a> | {customContent.times}</h2>
+    <p>{customContent.dates}</p>
   </div>
+
 </div>{.end}{.end}
