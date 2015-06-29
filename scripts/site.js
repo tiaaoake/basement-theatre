@@ -136,3 +136,11 @@ Y.use( 'node', 'event-flick', function( Y ) {
 
   });
 });
+
+Y.use( 'node', function( Y ) {
+  Y.on('domready', function() {
+    Y.one('window').on('resize', function() {
+      ImageLoader.load('#post-image');
+    });
+  });
+});
