@@ -1,7 +1,5 @@
 {.repeated section items}
-{.if customContent.isFeatured}
 
-{.or}
 <div class="sqs-col sqs-col-3 whats-on-wrapper">
   <div class="whats-on-item">
     <div class="whats-on-thumb sqs-row" id="card1">
@@ -22,4 +20,4 @@
       </form>
     </div>
   </div>
-</div>{.end}{.end}
+</div>{.end}
