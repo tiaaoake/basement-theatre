@@ -3,34 +3,9 @@
 
 <div class="row sqs-row">
   <div class="sqs-col sqs-col-12">
-
-    <section class=" js-collection -clear" data-collection="/whats-on/"></section>
-
-    <section class="js-collection-list -clear">
+    <squarespace:query collection="whats-on">
           {@|apply whats-on-item.block}
-    </section>
+    </squarespace:query>
   </div>
 </div>
-
 </section>
-
-<script>
-getCollection = function ( $elem ) {
-    $.ajax({
-        url: $elem.data( "collection" ),
-        type: "GET",
-        dataType: "html"
-
-    })
-    .done(function ( html ) {
-        var $html = $( html ),
-            $collection = $html.find( ".js-collection-list" ),
-            $tiles = $collection.children();
-
-        $elem.append( $tiles );
-    })
-    .fail(function (  xhr, status, error  ) {
-        console.log( "fail: ", error );
-    });
-},
-</script>
