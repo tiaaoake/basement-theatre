@@ -8,7 +8,7 @@
 <div class="row sqs-row">
   <div class="sqs-col sqs-col-12">
     <squarespace:query collection="whats-on" limit="3">
-          {@|apply whats-on-item.block}
+          {@|apply whats-on-item-featured.block}
     </squarespace:query>
   </div>
 </div>
