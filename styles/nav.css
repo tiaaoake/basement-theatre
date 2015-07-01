@@ -1,0 +1,23 @@
+/* Main navigation */
+.horizontal-navigation-bar {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-navigation-bar .main-nav {
+    padding-right: 0 !important;
+    margin-left: 20px;
+}
+
+.horizontal-navigation-bar nav ul {
+    margin-left: 0;
+}
+
+.horizontal-navigation-bar nav ul li a {
+    padding: 0;
+    margin-right: 40px;
+    
+    font-size: 12px;
+    
+    transition: color 0.3s;
+}
