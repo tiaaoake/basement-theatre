@@ -21,19 +21,16 @@
     background-color: #0200fc;
 }
 
-.whats-on-buttons .info:hover {
-    color: #0200fc;
-    background-color: #FFF;
-}
-
 .whats-on-buttons .book {
     color: #0200fc;
     background-color: #FFF;
 }
 
+.whats-on-buttons .info:hover,
 .whats-on-buttons .book:hover {
     color: #FFF;
-    background-color: #0200fc;
+    background-color: #000;
+    border: 1px solid #000;
 }
 
 .archive {
