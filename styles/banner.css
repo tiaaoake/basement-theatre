@@ -1,0 +1,9 @@
+/* Banner */
+#page-header,
+#banner-area-wrapper {
+    max-width: 868px !important;
+}
+
+#banner-area-wrapper {
+    margin: 0 !important;
+}
