@@ -1,34 +1,20 @@
-            <div id="page-footer-wrapper">
-              <div id="page-footer">
-                {.section website}
-                  {.if socialAccounts}
-                    <div id="sqs-social" data-content-field="connected-accounts">
-                      {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
+                <div id="page-footer-wrapper">
+                    <div id="page-footer">
+                        {.section website}
+                            {.if socialAccounts}
+                                <div id="sqs-social" data-content-field="connected-accounts">
+                                    {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
+                                </div>
+                            {.end}
+                        {.end}
+                        <squarespace:block-field id="footer-blocks" columns="12" label="Footer Content" />
                     </div>
-                  {.end}
-                {.end}
-                <squarespace:block-field id="footer-blocks" columns="12" label="Footer Content" />
-              </div>
-            </div><!-- page-footer-wrapper -->
+                </div><!-- page-footer-wrapper -->
 
 
-          </div>
+            </div>
         </div> <!-- canvas-wrapper -->
 
         {squarespace-footers}
-
-        <!-- collapsing logo -->
-    <script>
-        var $logo = $("a.header-brand");
-        $(window).scroll(function () {
-            var e = $(this).scrollTop();
-            if (e > 90) {
-                    $logo.addClass('scroll-shrink');
-            } else {
-                    $logo.removeClass('scroll-shrink');
-            }
-        });
-    </script>
-
     </body>
 </html>
