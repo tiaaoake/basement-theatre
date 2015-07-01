@@ -1,6 +1,5 @@
 
 <section class="whats-on sqs-layout sqs-grid-12 columns-12">
-
 <div class="whats-on-title">
     <h1 class="text-align-center">WHATS ON</h1>
 </div>
@@ -26,5 +25,4 @@
         <button class="btn archive">Archive</button>
     </div>
 </div>
-
 </section>
