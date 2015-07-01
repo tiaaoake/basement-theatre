@@ -5,5 +5,14 @@
 }
 
 #banner-area-wrapper {
+    height: 395px;
     margin: 0 !important;
+}
+
+#banner-area {
+    padding: 170px 0;
+}
+
+#page-thumb {
+    height: 395px !important;
 }
