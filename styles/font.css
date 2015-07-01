@@ -1,3 +1,37 @@
+@font-face {
+    font-family: 'gt_haptik_trialbold';
+    src: url('../assets/gthaptiktrial-bold-webfont.woff2') format('woff2'),
+         url('../assets/gthaptiktrial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gt_haptik_trialmedium';
+    src: url('../assets/gthaptiktrial-medium-webfont.woff2') format('woff2'),
+         url('../assets/gthaptiktrial-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gt_haptik_trial_regularRg';
+    src: url('../assets/gthaptiktrial-regular-webfont.woff2') format('woff2'),
+         url('../assets/gthaptiktrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gt_haptik_trialbold_rotalic';
+    src: url('../assets/gthaptiktrialbold-rotalic-webfont.woff2') format('woff2'),
+         url('../assets/gthaptiktrialbold-rotalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
