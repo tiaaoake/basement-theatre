@@ -1,0 +1,57 @@
+/* Button */
+
+.whats-on-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #0200fc;
+}
+
+.whats-on-buttons .btn {
+    width: 49%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #0200fc;
+    transition: all 0.3s;
+}
+
+.whats-on-buttons .info {
+    color: #FFF;
+    background-color: #0200fc;
+}
+
+.whats-on-buttons .info:hover {
+    color: #0200fc;
+    background-color: #FFF;
+}
+
+.whats-on-buttons .book {
+    color: #0200fc;
+    background-color: #FFF;
+}
+
+.whats-on-buttons .book:hover {
+    color: #FFF;
+    background-color: #0200fc;
+}
+
+.archive {
+    float: right;
+    padding: 10px 50px 10px 20px;
+    margin-top: 20px;
+    color: #FFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: url('../assets/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: top 11px right 25px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    transition: background-position 0.3s;
+}
+
+.archive:hover {
+    background-position: top 11px right 22px;
+}
