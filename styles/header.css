@@ -4,12 +4,12 @@ a.header-brand {
 	margin-right:25px;
 	background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c852e4b08c8c8a72eaf4/1435027538180/basement.png) no-repeat;
 	background-size:contain !important;
-	position:fixed;
-	top: 0;
-	right: 0;
+	position:absolute;
+	top: 10px;
+	right: -90px;
 	height: 230px;
 	width: 230px;
-	float: right;
+	/*float: right;*/
 }
 
 a.header-brand.scroll-shrink {
