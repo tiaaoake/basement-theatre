@@ -11,3 +11,7 @@
     
     transition: color 0.3s;
 }
+
+#sqs-social a:hover {
+    color: #0200fc !important;
+}

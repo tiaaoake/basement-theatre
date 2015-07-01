@@ -22,3 +22,7 @@
     
     transition: color 0.3s;
 }
+
+#main-navigation a:hover {
+    color: #0200fc !important;
+}
