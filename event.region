@@ -2,20 +2,20 @@
 <html>
 
 <head>
-  {.if template.mobileStylesEnabled}
-  <meta name="viewport" content="width=device-width, initial-scale=1"> {.end} {squarespace-headers}
+    {.if template.mobileStylesEnabled}
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {.end} {squarespace-headers}
 
-  <!--jQuery 2.0-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="scripts/jquery-2.0.0.min.js"><\/script>')
-  </script>
+    <!--jQuery 2.0-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="scripts/jquery-2.0.0.min.js"><\/script>')
+    </script>
 
-  <!-- imported javascript files -->
-  <squarespace:script src="site.js" />
-  <squarespace:script src="collapse.js" combo="true" />
-  <squarespace:script src="transition.js" combo="true" />
-  <squarespace:script src="jquery.flip.js" combo="true" />
+    <!-- imported javascript files -->
+    <squarespace:script src="site.js" />
+    <squarespace:script src="collapse.js" combo="true" />
+    <squarespace:script src="transition.js" combo="true" />
+    <squarespace:script src="jquery.flip.js" combo="true" />
 
 
 
@@ -25,202 +25,202 @@
 
 <body class="{squarespace.page-classes}{.section website}{.if logoImageUrl} has-logo-image{.or} no-logo-image{.end}{.end}{.section collection}{.section mainImage} has-page-thumbnail{.end}{.end}" id="{squarespace.page-id}" ontouchstart="">
 
-  {.if template.mobileStylesEnabled}
-  <squarespace:navigation navigationId="mainNav" template="mobile-navigation" /> {.end}
-  <div class="navbar-wrapper">
-    <div id="navigation-top">
-      <div class="horizontal-navigation-bar clear{.section website}{.if logoImageUrl} with-logo{.or} with-title{.end}{.end}">
-
-        <!-- // logo or site title markup in nav area -->
-        {.section website} {.if socialAccounts}
-        <div id="sqs-social" data-content-field="connected-accounts">
-          {.repeated section socialAccounts}{.if profileUrl}
-          <a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
-        </div>
-        {.end}
-        <!-- {.if logoImageUrl}
-                              <div id="banner-wrapper" data-content-field="site-title">
-                                <a href="/"><img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a>
-                              </div>
-                              {.or}
-                              <div id="site-title-wrapper" data-content-field="site-title">
-                                <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
-                              </div>
-                              {.end} -->
-
-        <squarespace:navigation navigationId="mainNav" template="main-navigation" /> {.end}
-
-      </div>
-    </div>
-    <!-- navigation-top -->
-  </div>
-
-  <a class="header-brand" href="/"></a>
-
-  <div id="canvas-wrapper">
-    <div id="canvas">
-
-      <div id="page-header-wrapper">
-        <div id="page-header">
-
-          <div id="banner-area-wrapper" >
-
-						<div id="banner-area" class="overlay" style="background:url('{.section item}{.if item.customContent.title}{assetUrl}{.end}{.end}') no-repeat; background-size:cover; background-position: 50% 50%;">
-
-              <!-- // page thumbnail image as banner image -->
-              {.section collection} {.section mainImage}
-              <div id="page-thumb" class="content-fill">
-                {.if item.customContent.bannerImg}
-                <img {assetUrl}?format=original />
-                {.end}
-              </div>
-              {.end} {.end}
-
-
-              <div class="banner-overlay-event">
-              </div>
-
-              <!-- // logo or site title markup in banner area -->
-              {.section website} {.if logoImageUrl}
-              <div id="banner-wrapper" data-content-field="site-title">
-                <a href="/" rel="bookmark">
-                  <img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /> {.section siteTagLine}
-                  <p id="logo-tagline" class="logo-subtitle">{siteTagLine}</p>{.end}
-                </a>
-              </div>
-              {.or}
-              <div id="site-title-wrapper" class="js-text-shrink" data-content-field="site-title">
-                <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
-                {.section siteTagLine}
-                <p id="site-tagline" class="site-subtitle">{siteTagLine}</p>{.end}
-              </div>
-              {.end} {.end}
-
-
-
-              <!-- // page title markup in banner area -->
-              {.section collection}
-              <div id="page-title-wrapper" class="js-text-shrink" data-edit-main-image="Page Banner">
-                {.if title}
-                <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end}
-								{.if item.customContent.tagline}
-                <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p> {.end}
-                {.if title}
-                <p id="site-tagline" class="site-subtitle">{item.customContent.dates} | {item.customContent.times}</p>{.end}
-              </div>
-              {.end}
-
-            </div>
-          </div>
-          <!-- banner-area-wrapper -->
-
-          <div id="navigation-bottom">
+    {.if template.mobileStylesEnabled}
+    <squarespace:navigation navigationId="mainNav" template="mobile-navigation" /> {.end}
+    <div class="navbar-wrapper">
+        <div id="navigation-top">
             <div class="horizontal-navigation-bar clear{.section website}{.if logoImageUrl} with-logo{.or} with-title{.end}{.end}">
 
-              <!-- // logo or site title markup in nav area -->
-              {.section website} {.if logoImageUrl}
-              <div id="banner-wrapper" data-content-field="site-title">
-                <a href="/">
-                  <img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" />
-                </a>
-              </div>
-              {.or}
-              <div id="site-title-wrapper" data-content-field="site-title">
-                <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
-              </div>
-              {.end}
+                <!-- // logo or site title markup in nav area -->
+                {.section website} {.if socialAccounts}
+                <div id="sqs-social" data-content-field="connected-accounts">
+                    {.repeated section socialAccounts}{.if profileUrl}
+                    <a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
+                </div>
+                {.end}
+                <!-- {.if logoImageUrl}
+                                                            <div id="banner-wrapper" data-content-field="site-title">
+                                                                <a href="/"><img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a>
+                                                            </div>
+                                                            {.or}
+                                                            <div id="site-title-wrapper" data-content-field="site-title">
+                                                                <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
+                                                            </div>
+                                                            {.end} -->
 
-              <squarespace:navigation navigationId="mainNav" template="main-navigation" /> {.if socialAccounts}
-              <div id="sqs-social" data-content-field="connected-accounts">
-                {.repeated section socialAccounts}{.if profileUrl}
-                <a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
-              </div>
-              {.end} {.end}
+                <squarespace:navigation navigationId="mainNav" template="main-navigation" /> {.end}
 
             </div>
-          </div>
-          <!-- navigation-bottom -->
-
         </div>
-      </div>
-      <!-- page-header-wrapper -->
+        <!-- navigation-top -->
+    </div>
+
+    <a class="header-brand" href="/"></a>
+
+    <div id="canvas-wrapper">
+        <div id="canvas">
+
+            <div id="page-header-wrapper">
+                <div id="page-header">
+
+                    <div id="banner-area-wrapper" >
+
+                        <div id="banner-area" class="overlay" style="background:url('{.section item}{.if item.customContent.title}{assetUrl}{.end}{.end}') no-repeat; background-size:cover; background-position: 50% 50%;">
+
+                            <!-- // page thumbnail image as banner image -->
+                            {.section collection} {.section mainImage}
+                            <div id="page-thumb" class="content-fill">
+                                {.if item.customContent.bannerImg}
+                                <img {assetUrl}?format=original />
+                                {.end}
+                            </div>
+                            {.end} {.end}
 
 
-				<div id="page-body-wrapper" class="one-sidebar">
-					<div id="page-body" class="event">
+                            <div class="banner-overlay-event">
+                            </div>
 
-						<div id="event-full-width">
+                            <!-- // logo or site title markup in banner area -->
+                            {.section website} {.if logoImageUrl}
+                            <div id="banner-wrapper" data-content-field="site-title">
+                                <a href="/" rel="bookmark">
+                                    <img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /> {.section siteTagLine}
+                                    <p id="logo-tagline" class="logo-subtitle">{siteTagLine}</p>{.end}
+                                </a>
+                            </div>
+                            {.or}
+                            <div id="site-title-wrapper" class="js-text-shrink" data-content-field="site-title">
+                                <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
+                                {.section siteTagLine}
+                                <p id="site-tagline" class="site-subtitle">{siteTagLine}</p>{.end}
+                            </div>
+                            {.end} {.end}
 
-							<div id="content-wrapper">
-								<div id="content">
 
-							    <!-- // CATEGORY NAV -->
-							    {.section collection}{.equal? typeName "products"}{.section categories}
-							    <div id="categoryNav" role="navigation">
-							      <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
-							      <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
-							      <nav class="category-nav">
-							        <ul class="nav category-nav-links">
-							          <li class="filter"><a>Filter{.if categoryFilter}: {categoryFilter}{.end}</a></li>
-							          <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">All</a><span class="delimiter">/</span></li>
-							        {.repeated section @}
-							          <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a><span class="delimiter">/</span></li>
-							        {.end}
-							        </ul>
-							      </nav>
-							    </div>
-							    {.end}{.end}{.end}
 
-									<div class="sqs-block spacer-block sqs-block-spacer" data-block-type="21" id="block-yui_3_17_2_5_1435394724012_6670" data-block-json="{&quot;vSize&quot;:1,&quot;aspectRatio&quot;:null,&quot;hSize&quot;:null,&quot;floatDir&quot;:null}"><div class="sqs-block-content">&nbsp;</div></div>
+                            <!-- // page title markup in banner area -->
+                            {.section collection}
+                            <div id="page-title-wrapper" class="js-text-shrink" data-edit-main-image="Page Banner">
+                                {.if title}
+                                <h1 id="page-title" class="page-title">{item.customContent.title}</h1>{.end}
+                                {.if item.customContent.tagline}
+                                <p id="site-tagline" class="site-subtitle">{item.customContent.tagline}</p> {.end}
+                                {.if title}
+                                <p id="site-tagline" class="site-subtitle">{item.customContent.dates} | {item.customContent.times}</p>{.end}
+                            </div>
+                            {.end}
 
-							    <div class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" data-edit-main-image="Page Banner">
-										{squarespace.main-content}
-									</div>
+                        </div>
+                    </div>
+                    <!-- banner-area-wrapper -->
 
-									<div id="page-body-footer" class="extra-wrapper">
-										<squarespace:block-field id="page-footer-{collection.id}" description="Page Footer" columns="12" label="{collection.title} Footer Content" />
-									</div>
+                    <div id="navigation-bottom">
+                        <div class="horizontal-navigation-bar clear{.section website}{.if logoImageUrl} with-logo{.or} with-title{.end}{.end}">
 
-								</div>
-							</div> <!-- content-wrapper -->
+                            <!-- // logo or site title markup in nav area -->
+                            {.section website} {.if logoImageUrl}
+                            <div id="banner-wrapper" data-content-field="site-title">
+                                <a href="/">
+                                    <img id="banner" src="{logoImageUrl}?format=1500w" alt="{siteTitle}" />
+                                </a>
+                            </div>
+                            {.or}
+                            <div id="site-title-wrapper" data-content-field="site-title">
+                                <h1 id="site-title" class="page-title"><a href="/" rel="bookmark">{siteTitle}</a></h1>
+                            </div>
+                            {.end}
 
-							<div id="sidebar-one-wrapper" class="vertical-navigation-bar-wrapper">
-								<div id="sidebar-one" class="vertical-navigation-bar">
-									<squarespace:navigation navigationId="mainNav" template="main-navigation" />
-									{.section website}
-									<div class="site-info">
-										{.if siteTitle}<h3 class="site-title">{siteTitle}</h3>{.end}
-								    {.if siteDescription}<div class="site-description">{siteDescription}</div>{.end}
-								  </div>
-								  {.end}
+                            <squarespace:navigation navigationId="mainNav" template="main-navigation" /> {.if socialAccounts}
+                            <div id="sqs-social" data-content-field="connected-accounts">
+                                {.repeated section socialAccounts}{.if profileUrl}
+                                <a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
+                            </div>
+                            {.end} {.end}
 
-									<div class="sqs-block spacer-block sqs-block-spacer" data-block-type="21" id="block-yui_3_17_2_5_1435394724012_6670" data-block-json="{&quot;vSize&quot;:1,&quot;aspectRatio&quot;:null,&quot;hSize&quot;:null,&quot;floatDir&quot;:null}"><div class="sqs-block-content">&nbsp;</div></div>
+                        </div>
+                    </div>
+                    <!-- navigation-bottom -->
 
-									{.if item.customContent.title}
-									<div class="sqs-layout sqs-grid-1 columns-1" id="sidebar-one-blocks">
-										<div class="row sqs-row">
-											<div class="col sqs-col-1 span-1">
-												<div class="sqs-block">
-													<div class="sqs-block-content" id="eventDetails">
-														<h2>DATE: <span>{item.customContent.dates}</span><br>
-														SHOWTIME: <span>{item.customContent.showtime}</span><br>
-														RUNTIME: <span>{item.customContent.runtime}</span><br>
-														VENUE: <span>{item.customContent.venue}</span><br>
-														PRICES: <span>{item.customContent.prices}</span><br>
-														DIRECTED BY: <span>{item.customContent.director}</span><br>
-														CAST: <span>{item.customContent.cast}</span></h2>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									{.end}
-									<squarespace:block-field id="sidebar-one-blocks" label="Sidebar One Content" />
-								</div>
-							</div><!-- sidebar-one-wrapper -->
-						</div>
+                </div>
+            </div>
+            <!-- page-header-wrapper -->
 
-					<div class="clearer" id="body-clearer"></div>
 
-		      </div>
-		    </div> <!-- page-body-wrapper -->
+                <div id="page-body-wrapper" class="one-sidebar">
+                    <div id="page-body" class="event">
+
+                        <div id="event-full-width">
+
+                            <div id="content-wrapper">
+                                <div id="content">
+
+                                    <!-- // CATEGORY NAV -->
+                                    {.section collection}{.equal? typeName "products"}{.section categories}
+                                    <div id="categoryNav" role="navigation">
+                                        <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
+                                        <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
+                                        <nav class="category-nav">
+                                            <ul class="nav category-nav-links">
+                                                <li class="filter"><a>Filter{.if categoryFilter}: {categoryFilter}{.end}</a></li>
+                                                <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">All</a><span class="delimiter">/</span></li>
+                                            {.repeated section @}
+                                                <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a><span class="delimiter">/</span></li>
+                                            {.end}
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    {.end}{.end}{.end}
+
+                                    <div class="sqs-block spacer-block sqs-block-spacer" data-block-type="21" id="block-yui_3_17_2_5_1435394724012_6670" data-block-json="{&quot;vSize&quot;:1,&quot;aspectRatio&quot;:null,&quot;hSize&quot;:null,&quot;floatDir&quot;:null}"><div class="sqs-block-content">&nbsp;</div></div>
+
+                                    <div class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" data-edit-main-image="Page Banner">
+                                        {squarespace.main-content}
+                                    </div>
+
+                                    <div id="page-body-footer" class="extra-wrapper">
+                                        <squarespace:block-field id="page-footer-{collection.id}" description="Page Footer" columns="12" label="{collection.title} Footer Content" />
+                                    </div>
+
+                                </div>
+                            </div> <!-- content-wrapper -->
+
+                            <div id="sidebar-one-wrapper" class="vertical-navigation-bar-wrapper">
+                                <div id="sidebar-one" class="vertical-navigation-bar">
+                                    <squarespace:navigation navigationId="mainNav" template="main-navigation" />
+                                    {.section website}
+                                    <div class="site-info">
+                                        {.if siteTitle}<h3 class="site-title">{siteTitle}</h3>{.end}
+                                        {.if siteDescription}<div class="site-description">{siteDescription}</div>{.end}
+                                    </div>
+                                    {.end}
+
+                                    <div class="sqs-block spacer-block sqs-block-spacer" data-block-type="21" id="block-yui_3_17_2_5_1435394724012_6670" data-block-json="{&quot;vSize&quot;:1,&quot;aspectRatio&quot;:null,&quot;hSize&quot;:null,&quot;floatDir&quot;:null}"><div class="sqs-block-content">&nbsp;</div></div>
+
+                                    {.if item.customContent.title}
+                                    <div class="sqs-layout sqs-grid-1 columns-1" id="sidebar-one-blocks">
+                                        <div class="row sqs-row">
+                                            <div class="col sqs-col-1 span-1">
+                                                <div class="sqs-block">
+                                                    <div class="sqs-block-content" id="eventDetails">
+                                                        <h2>DATE: <span>{item.customContent.dates}</span><br>
+                                                        SHOWTIME: <span>{item.customContent.showtime}</span><br>
+                                                        RUNTIME: <span>{item.customContent.runtime}</span><br>
+                                                        VENUE: <span>{item.customContent.venue}</span><br>
+                                                        PRICES: <span>{item.customContent.prices}</span><br>
+                                                        DIRECTED BY: <span>{item.customContent.director}</span><br>
+                                                        CAST: <span>{item.customContent.cast}</span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {.end}
+                                    <squarespace:block-field id="sidebar-one-blocks" label="Sidebar One Content" />
+                                </div>
+                            </div><!-- sidebar-one-wrapper -->
+                        </div>
+
+                    <div class="clearer" id="body-clearer"></div>
+
+                    </div>
+                </div> <!-- page-body-wrapper -->
