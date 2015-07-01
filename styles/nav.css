@@ -2,6 +2,7 @@
 .horizontal-navigation-bar {
     display: flex;
     align-items: center;
+    max-width: 868px;
 }
 
 .horizontal-navigation-bar .main-nav {
