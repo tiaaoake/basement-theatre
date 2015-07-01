@@ -17,10 +17,13 @@
     <div class="coming-soon">
         <h3 class="text-align-center">COMING SOON</h1>
     </div>
-    <div class="sqs-col sqs-col-12">
+    <div class="sqs-col sqs-col-12 coming-soon-row">
         <squarespace:query collection="whats-on" limit="4">
             {@|apply coming-soon-item.block}
         </squarespace:query>
+    </div>
+    <div class="sqs-col sqs-col-12">
+        <button class="btn archive">Archive</button>
     </div>
 </div>
 
