@@ -18,9 +18,7 @@
         
         <div class="whats-on-buttons">
             <button class="btn info">MORE INFO</button>
-            <!-- <form action="{fullUrl}"> -->
-            <button class="btn book">BOOK NOW</button>
-            <!-- </form> -->
+            <a class="btn book" href="#">BOOK NOW</a>
         </div>
     </div>
 </div>{.end}{.end}
