@@ -16,9 +16,10 @@
 
 .horizontal-navigation-bar nav ul li a {
     padding: 0;
-    margin-right: 40px;
+    margin-right: 30px;
     
-    font-size: 12px;
+    font-family: 'gt_haptik_trialmedium' !important;
+    font-size: 14px;
     
     transition: color 0.3s;
 }
