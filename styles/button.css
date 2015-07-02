@@ -23,6 +23,7 @@
 
 .whats-on-buttons .book {
     color: #0200fc;
+    text-align: center;
     background-color: #FFF;
 }
 
@@ -46,9 +47,10 @@
     background-position: top 11px right 25px;
     background-color: transparent;
     border: 1px solid #FFF;
-    transition: background-position 0.3s;
+    transition: all 0.3s;
 }
 
 .archive:hover {
-    background-position: top 11px right 22px;
+    background-color: #000;
+    border: 1px solid #000;
 }
