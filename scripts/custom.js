@@ -11,6 +11,10 @@ $(document).ready(function() {
 	});
 
 	$('[data-flip]').on('click', function() {
-		$('[data-flipper]').addClass('selected');
+		$(this).parents('[data-flipper]').addClass('active');
+	});
+
+	$('[data-flip-back]').on('click', function() {
+		$(this).parents('[data-flipper]').removeClass('active');
 	});
 });
