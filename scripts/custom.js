@@ -9,4 +9,8 @@ $(document).ready(function() {
 	       $logo.removeClass('scroll-shrink');
 	    }
 	});
+
+	$('[data-flip]').on('click', function() {
+		$('[data-flipper]').addClass('selected');
+	});
 });
