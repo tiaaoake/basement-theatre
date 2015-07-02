@@ -127,19 +127,6 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     background: #0200fc !important;
 }
 
-// .whats-on-wrapper {
-//     margin-bottom:2em;
-// }
-
-// .whats-on-item {
-//     background: #fff;
-//     padding-top: 10px;
-//     padding-left:10px;
-//     padding-right:10px;
-//     padding-bottom: 15px;
-//     margin: 10px;
-// }
-
 .whats-on-thumb {
     max-height:414px;
 }
@@ -219,13 +206,9 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     perspective: 1000;
 }
 
-// .hover-reveal:hover .flipper {
-//     transform: rotateY(180deg);
-// }
-
-// .hover-reveal .flipper.select {
-//     transform: rotateY(180deg);
-// }
+.hover-reveal .flipper.active {
+    transform: rotateY(180deg);
+}
 
 .flipper {
     position: absolute;
@@ -237,10 +220,6 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     transition: all 0.3s;
 }
 
-.flipper.select {
-    transform: rotateY(180deg);
-}
-
 .front, .back {
     position: absolute;
     top: 0;
@@ -250,7 +229,7 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     justify-content: center;
     width: 100%;
     height: 100%;
-    min-height: 422px;
+    min-height: 414px;
     padding: 10px 10px 20px 10px;
     background-color: #FFF;
     backface-visibility: hidden;
@@ -279,9 +258,13 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     transform: rotateY(180deg);
 }
 
+.back .whats-on-buttons {
+    margin-top: 14px;
+}
+
 .back p {
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: center;
     color: #000;
 }
@@ -315,36 +298,3 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     padding: 10px;
     background-color: #FFF;
 }
-
-// .front {
-//     position: relative;
-//     max-width:414px;
-//     max-height:310px;
-//     overflow:hidden;
-//     top: 0;
-//     left: 0;
-// }
-
-// .excerpt {
-//     width:inherit;
-//     opacity: 0;
-//     position: absolute;
-//     -webkit-transition: opacity 0.2s ease;
-//     -moz-transition: opacity 0.2s ease;
-//     -o-transition: opacity 0.2s ease;
-//     transition: opacity 0.2s ease;
-// }
-
-// .excerpt p {
-//     margin: 10px;
-//     color: #fff;
-// }
-
-// .front:hover .excerpt {
-//     opacity:1;
-//     background-color:rgba(0,0,0,.6);
-//     -webkit-transition: opacity 0.2s ease;
-//     -moz-transition: opacity 0.2s ease;
-//     -o-transition: opacity 0.2s ease;
-//     transition: opacity 0.2s ease;
-// }
