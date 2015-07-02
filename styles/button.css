@@ -1,10 +1,17 @@
 /* Button */
 
 .whats-on-buttons {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    width: 100%;
+    padding: 20px 0 10px 0;
     margin-top: 20px;
+    
+    background-color: #FFF;
+    box-sizing: border-box;
     border-top: 1px solid #0200fc;
 }
 
@@ -53,4 +60,8 @@
 .archive:hover {
     background-color: #000;
     border: 1px solid #000;
+}
+
+button:focus {
+    outline: none;
 }
