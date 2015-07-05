@@ -1,20 +1,35 @@
-                <div id="page-footer-wrapper">
-                    <div id="page-footer">
-                        {.section website}
-                            <!-- {.if socialAccounts}
-                                <div id="sqs-social" data-content-field="connected-accounts">
-                                    {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
-                                </div>
-                            {.end} -->
+
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-block sqs-col-12">
+                    <h1>Sign up to our newsletter</h1>
+                </div>
+                <div class="footer-block sqs-col-7">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="YOUR EMAIL">
+                            <button class="button">ok</button>
+                        </div>
+                    </form>
+                    <squarespace:navigation navigationId="footerNav" template="footer-navigation" />
+                </div>
+
+                <div class="footer-block sqs-col-2 address-block">
+                    {.section website}
+                        {.if socialAccounts}
+                            <div id="sqs-social" data-content-field="connected-accounts">
+                                {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
+                            </div>
                         {.end}
-                        <squarespace:block-field id="footer-blocks" columns="12" label="Footer Content" />
-                    </div>
-                </div> <!-- page-footer-wrapper -->
+                    {.end}
 
-
+                    <p>Basement Theatre</p>
+                    <p>PO Box 7273</p>
+                    <p>Wellesley Street</p>
+                    <p>Auckland 1141</p>
+                </div>
             </div>
-        </div> <!-- canvas-wrapper -->
-
+        </div>
         {squarespace-footers}
     </body>
 </html>
