@@ -27,3 +27,25 @@
 #main-navigation a:hover {
     color: #0200fc !important;
 }
+
+
+
+/* Footer navigation */
+.footer-nav {
+    margin-top: 50px;
+}
+
+.footer-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav ul li a {
+    color: #FFF;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #f93a2b;
+}
