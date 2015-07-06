@@ -24,7 +24,7 @@ a.header-brand.scroll-shrink {
     transition: all 0.1s;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
     a.header-brand {
         background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
         height: 30px;
@@ -42,15 +42,4 @@ a.header-brand.scroll-shrink {
     #canvas {
       margin-top: 0 !important;
     }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 1120px) {
-
-    a.header-brand {
-        background: url(https://static1.squarespace.com/static/5535bce1e4b071a2f7e12732/t/5588c853e4b08c8c8a72eaf7/1435027539849/icon.png) no-repeat;
-        height: 60px;
-        width: 60px;
-        margin-top:8px;
-    }
-
 }
