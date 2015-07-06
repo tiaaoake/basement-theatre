@@ -13,9 +13,14 @@
     background-color: #FFF;
     box-sizing: border-box;
     border-top: 1px solid #0200fc;
+    
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
 }
 
 .whats-on-buttons .btn {
+    display: block;
     width: 49%;
     padding-top: 15px;
     padding-bottom: 15px;
