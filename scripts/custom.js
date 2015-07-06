@@ -17,4 +17,8 @@ $(document).ready(function() {
 	$('[data-flip-back]').on('click', function() {
 		$(this).parents('[data-flipper]').removeClass('active');
 	});
+
+	$('[data-toggle-mobile-nav]').on('click', function() {
+		$('[data-mobile-nav]').toggleClass('active');
+	});
 });
