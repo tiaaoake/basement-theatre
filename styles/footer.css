@@ -34,7 +34,9 @@
 
 .footer-block .form-group {
     display: flex;
-    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
 }
 
 .footer-block input,
@@ -118,6 +120,7 @@
 
     .footer-block .form-group{
         flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
     }
 
     .footer-block input,

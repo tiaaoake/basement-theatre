@@ -40,9 +40,14 @@
 
 .footer-nav ul {
     display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-flex-wrap: nowrap;
 }
 
 .footer-nav ul li a {
@@ -109,6 +114,11 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        display: -webkit-box;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        -webkit-align-items: center;
+        -webkit-flex-wrap: wrap;
     }
 
     .footer-nav ul li {
