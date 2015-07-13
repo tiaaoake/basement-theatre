@@ -1,134 +1,71 @@
-@font-face {
-    font-family: 'gt_haptik_trialbold';
-    src: url('../assets/gthaptiktrial-bold-webfont.woff2') format('woff2'),
-         url('../assets/gthaptiktrial-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gt_haptik_trialmedium';
-    src: url('../assets/gthaptiktrial-medium-webfont.woff2') format('woff2'),
-         url('../assets/gthaptiktrial-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gt_haptik_trial_regularRg';
-    src: url('../assets/gthaptiktrial-regular-webfont.woff2') format('woff2'),
-         url('../assets/gthaptiktrial-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gt_haptik_trialbold_rotalic';
-    src: url('../assets/gthaptiktrialbold-rotalic-webfont.woff2') format('woff2'),
-         url('../assets/gthaptiktrialbold-rotalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-/*  Font Awesome
-    the iconic font designed for use with Twitter Bootstrap
-    -------------------------------------------------------
-    The full suite of pictographic icons, examples, and documentation
-    can be found at: http://fortawesome.github.com/Font-Awesome/
-
-    License
-    -------------------------------------------------------
-    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
-    http://creativecommons.org/licenses/by/3.0/ A mention of
-    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
-    source code is considered acceptable attribution (most common on the web).
-    If human readable source code is not available to the end user, a mention in
-    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
-    or mobile software).
-
-    Contact
-    -------------------------------------------------------
-    Email: dave@davegandy.com
-    Twitter: http://twitter.com/fortaweso_me
-    Work: http://lemonwi.se co-founder
-    
-    clear cache.
-    */
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('/assets/fontawesome-webfont.eot');
-    src: url('/assets/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fontawesome-webfont.woff') format('woff'),
-         url('/assets/fontawesome-webfont.ttf') format('truetype'),
-         url('/assets/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
-         url('/assets/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* sprites.less reset */
-[class^="icon-"], [class*=" icon-"] {
+/*
+    Link - Icon
+ */
+[class^="icon-"],
+[class*=" icon-"] {
     display: inline;
     width: auto;
     height: auto;
-    line-height: inherit;
     vertical-align: baseline;
+
+    line-height: inherit;
+
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat;
-}
-li[class^="icon-"], li[class*=" icon-"] {
-    display: block;
+
+    &:before {
+        display: inline-block;
+
+        font-family: @font-icon;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+    }
 }
 
-/*  Font Awesome styles
-    ------------------------------------------------------- */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
+li[class^="icon-"],
+li[class*=" icon-"] {
     display: inline-block;
+    width: 1.25em;
+    margin-left: 0;
+
+    text-align: center;
+    list-style-type: none;
+
+    &:before {
+        text-indent: -2em;
+        text-align: center;
+    }
+}
+
+li .icon-large[class^="icon-"],
+li .icon-large[class*=" icon-"] {
+    width: 1.875em;
+
+    &:before {
+        text-indent: -1.3333333333333333em;
+    }
+}
+
+a [class^="icon-"],
+a [class*=" icon-"] {
+    display: inline-block;
+
     text-decoration: inherit;
 }
-a [class^="icon-"], a [class*=" icon-"] {
-    display: inline-block;
-    text-decoration: inherit;
+
+.btn [class^="icon-"],
+.btn [class*=" icon-"] {
+    line-height: 0.9em;
 }
-/* makes the font 33% larger relative to the icon container */
+
 .icon-large:before {
     vertical-align: top;
     font-size: 1.3333333333333333em;
 }
-.btn [class^="icon-"], .btn [class*=" icon-"] {
-    /* keeps button heights with and without icons the same */
-    line-height: .9em;
-}
-li [class^="icon-"], li [class*=" icon-"] {
-    display: inline-block;
-    width: 1.25em;
-    text-align: center;
-}
-li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
-    /* 1.5 increased font size for icon-large * 1.25 width */
-    width: 1.875em;
-}
-li[class^="icon-"], li[class*=" icon-"] {
-    margin-left: 0;
-    list-style-type: none;
-}
-li[class^="icon-"]:before, li[class*=" icon-"]:before {
-    text-indent: -2em;
-    text-align: center;
-}
-li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
-    text-indent: -1.3333333333333333em;
-}
 
-/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
+
 .icon-glass:before              { content: "\f000"; }
 .icon-music:before              { content: "\f001"; }
 .icon-search:before             { content: "\f002"; }
@@ -161,7 +98,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-play-circle:before        { content: "\f01d"; }
 .icon-repeat:before             { content: "\f01e"; }
 
-/* \f020 is not a valid unicode character. all shifted one down */
 .icon-refresh:before            { content: "\f021"; }
 .icon-list-alt:before           { content: "\f022"; }
 .icon-lock:before               { content: "\f023"; }

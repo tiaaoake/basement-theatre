@@ -81,8 +81,6 @@ FRONT PAGE CUSTOM STYLES
 
 #block-yui_3_17_2_2_1435157932706_25100, #block-yui_3_17_2_2_1431400265136_26050, #block-yui_3_17_2_24_1431401661494_8621, #block-yui_3_17_2_6_1433978922996_19932, #block-yui_3_17_2_68_1431401661494_6048, #block-yui_3_17_2_2_1433901705627_28464 {
     background:@basement-blue;
-    -webkit-box-shadow: @box-shadow-bottom;
-    -moz-box-shadow:    @box-shadow-bottom;
     box-shadow:         @box-shadow-bottom;
     margin: 0 auto;
     max-width:100%;
@@ -90,8 +88,6 @@ FRONT PAGE CUSTOM STYLES
 
 
 #block-yui_3_17_2_2_1435157932706_25100 {
-    -webkit-box-shadow: @box-shadow-top;
-    -moz-box-shadow: @box-shadow-top;
     box-shadow: @box-shadow-top;
 }
 
@@ -220,7 +216,8 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     right: 0;
     bottom: 0;
     left: 0;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     transition: all 0.3s;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -230,9 +227,15 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     position: absolute;
     top: 0;
     left: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
     min-height: 422px;
@@ -240,7 +243,7 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
     background-color: #FFF;
     box-sizing: border-box;
     backface-visibility: hidden;
-    
+
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
@@ -264,7 +267,7 @@ div#block-yui_3_17_2_2_1435111617305_10207 > .sqs-block-content h1, div#block-yu
 
     background-color: #FFF;
     transform: rotateY(180deg);
-    
+
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
 }
