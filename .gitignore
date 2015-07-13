@@ -1,3 +1,2 @@
 .sftp-config.json
-# Ignore server cache
 .sqs-cache
