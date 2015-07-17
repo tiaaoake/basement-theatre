@@ -4,7 +4,7 @@
 <div class="row sqs-row">
     <div class="sqs-col sqs-col-12">
         <squarespace:query collection="whats-on">
-            {@|apply whats-on-item-regular.block}
+            {@|apply whats-on-item.block}
         </squarespace:query>
     </div>
 </div>

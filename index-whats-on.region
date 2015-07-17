@@ -1,0 +1,27 @@
+<section class="whats-on sqs-layout sqs-grid-12 columns-12">
+    <div class="whats-on-title">
+        <h1 class="text-align-center">WHATS ON</h1>
+    </div>
+
+    <div class="row sqs-row">
+        <div class="sqs-col sqs-col-12">
+            <squarespace:query collection="whats-on" limit="3">
+                {@|apply whats-on-item-featured.block}
+            </squarespace:query>
+        </div>
+    </div>
+
+    <div class="row sqs-row">
+        <div class="coming-soon">
+            <h3 class="text-align-center">COMING SOON</h1>
+        </div>
+        <div class="sqs-col sqs-col-12 coming-soon-row">
+            <squarespace:query collection="whats-on" limit="4">
+                {@|apply coming-soon-item.block}
+            </squarespace:query>
+        </div>
+        <div class="sqs-col sqs-col-12">
+            <button class="btn archive">Archive</button>
+        </div>
+    </div>
+</section>
