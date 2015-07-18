@@ -1,21 +1,19 @@
         <footer class="footer" role="contentinfo">
-            <div class="constrain-width row">
+            <div class="constrain-width row align-between">
 
-
-                <div class="footer-block sqs-col-12">
-                    <h1>Sign up to our newsletter</h1>
-                </div>
-                <div class="footer-block sqs-col-7">
+                <div class="sqs-col-7">
                     <form class="form">
+                        <h3>Sign up to our newsletter</h3>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="YOUR EMAIL">
-                            <button class="button">Ok</button>
+                            <input type="email" name="email" placeholder="Your Email">
+                            <button class="button" type="submit">Ok</button>
                         </div>
                     </form>
+
                     <squarespace:navigation navigationId="mainNav" template="footer-navigation" />
                 </div>
 
-                <div class="footer-block sqs-col-2 address-block">
+                <div class="sqs-col-3 address-block">
                     {.section website}
                         {.if socialAccounts}
                             <div id="sqs-social" data-content-field="connected-accounts">
