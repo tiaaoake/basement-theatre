@@ -47,7 +47,7 @@
 
                     {.section website}
                         {.if socialAccounts}
-                        <div id="sqs-social" data-content-field="connected-accounts">
+                        <div class="social-icons" data-content-field="connected-accounts">
                             {.repeated section socialAccounts}
                                 {.if profileUrl}
                                     <a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>
