@@ -1,5 +1,7 @@
-        <div class="footer">
-            <div class="footer-content">
+        <footer class="footer" role="contentinfo">
+            <div class="constrain-width row">
+
+
                 <div class="footer-block sqs-col-12">
                     <h1>Sign up to our newsletter</h1>
                 </div>
@@ -26,13 +28,13 @@
                         {.end}
                     {.end}
 
-                    <p>Basement Theatre</p>
-                    <p>PO Box 7273</p>
-                    <p>Wellesley Street</p>
-                    <p>Auckland 1141</p>
+                    <p>{website.location.addressTitle}</p>
+                    <p>{website.location.addressLine1}</p>
+                    <p>{website.location.addressLine2}</p>
+                    <p>{website.location.addressCountry}</p>
                 </div>
             </div>
-        </div>
+        </footer>
         {squarespace-footers}
     </body>
 </html>
