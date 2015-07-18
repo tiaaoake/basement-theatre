@@ -2,6 +2,8 @@
     Molecule - Form
  */
 input {
+    box-sizing: border-box;
+
     outline: none;
 }
 
@@ -41,27 +43,31 @@ input {
 
     input {
         color: @color-tint;
-        text-transform: uppercase;
 
         &::-webkit-input-placeholder {
             color: @color-quaternary;
-            // text-transform: uppercase;
+            text-transform: uppercase;
         }
 
         &::-moz-placeholder {
             color: @color-quaternary;
-            // text-transform: uppercase;
+            text-transform: uppercase;
         }
 
         &:-ms-input-placeholder {
             color: @color-quaternary;
-            // text-transform: uppercase;
+            text-transform: uppercase;
         }
     }
 
-    button:hover {
-        color: @color-tertiary;
+    button {
+        color: @color-quaternary;
+        text-transform: uppercase;
 
-        background-color: @color-quaternary;
+        &:hover {
+            color: @color-tertiary;
+
+            background-color: @color-quaternary;
+        }
     }
 }
