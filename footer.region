@@ -13,7 +13,7 @@
                     <squarespace:navigation navigationId="mainNav" template="navigation-footer"/>
                 </div>
 
-                <div class="sqs-col-3 address-block">
+                <div class="sqs-col-3">
                     {.section website}
                         {.if socialAccounts}
                             <div class="social-icons light" data-content-field="connected-accounts">
@@ -26,10 +26,12 @@
                         {.end}
                     {.end}
 
-                    <p>{website.location.addressTitle}</p>
-                    <p>{website.location.addressLine1}</p>
-                    <p>{website.location.addressLine2}</p>
-                    <p>{website.location.addressCountry}</p>
+                    <div class="contact-details">
+                        <p>{website.location.addressTitle}</p>
+                        <p>{website.location.addressLine1}</p>
+                        <p>{website.location.addressLine2}</p>
+                        <p>{website.location.addressCountry}</p>
+                    </div>
                 </div>
             </div>
         </footer>
