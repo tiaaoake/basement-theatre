@@ -36,7 +36,7 @@
                     </div>
                     {.end}
 
-                    <squarespace:navigation navigationId="mainNav" template="main-navigation"/>
+                    <squarespace:navigation navigationId="mainNav" template="navigation"/>
                 {.end}
             </div>
         </div>
@@ -56,7 +56,7 @@
                         </div>
                         {.end}
 
-                        <squarespace:navigation navigationId="mainNav" template="main-navigation"/>
+                        <squarespace:navigation navigationId="mainNav" template="navigation"/>
                     {.end}
 
                     <a class="header-brand" href="/"></a>
@@ -136,7 +136,7 @@
                                         </div>
                                     {.end}
 
-                                    <squarespace:navigation navigationId="mainNav" template="main-navigation" />
+                                    <squarespace:navigation navigationId="mainNav" template="navigation" />
 
                                     {.if socialAccounts}
                                         <div id="sqs-social" data-content-field="connected-accounts">

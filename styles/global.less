@@ -558,17 +558,6 @@ nav ul, nav ol { margin: 0; }
 ************************************************/
 
 
-
-
-
-
-
-
-// .vertical-navigation-bar {
-//   #main-navigation { display: none; }
-//   nav ul { .nav-font; }
-// }
-
 .pagination {
 
   border-top: 1px solid;
@@ -637,8 +626,6 @@ nav.main-menu {
 #navigation-bottom { background-color: @navBgColor; /*float: left;*/ width: 100%; }
 #navigation-bottom { border-bottom: 1px solid @bordersColor; }
 
-.vertical-navigation-bar #main-navigation { display: none; }
-.vertical-navigation-bar #main-navigation span.delimiter { display: none; }
 
 span.delimiter {
   color: @bordersColor;
@@ -1154,30 +1141,30 @@ body.canvas-setting-site-width {
 
 /* navigation postion */
 
-body.top-navigation-position-above-banner {
-  #navigation-top { display: block; }
-  #navigation-bottom { display: none; }
-}
+// body.top-navigation-position-above-banner {
+//   #navigation-top { display: block; }
+//   #navigation-bottom { display: none; }
+// }
 
-body.top-navigation-position-below-banner {
-  #navigation-top { display: none; }
-  #navigation-bottom { display: block; }
-}
+// body.top-navigation-position-below-banner {
+//   #navigation-top { display: none; }
+//   #navigation-bottom { display: block; }
+// }
 
-body.top-navigation-position-none {
-  #navigation-top { display: none; }
-  #navigation-bottom { display: none; }
-  .vertical-navigation-bar #main-navigation {
-    margin-bottom: @vgrid;
-    display: block;
-    ul { .nav-font; }
-    a { display: block; }
-    ul li ul { margin-bottom: 1em; display: block; }
-    ul li ul li { display: block; text-indent: 0.5em; *zoom: 1; }
-    ul li.folder .subnav { max-height: 0; overflow: hidden; -webkit-transition: max-height 0.50s; -moz-transition: max-height 0.50s; -ms-transition: max-height 0.50s; transition: max-height 0.50s; }
-    ul li.folder:hover .subnav { max-height: 9999px; overflow: visible; }
-  }
-}
+// body.top-navigation-position-none {
+//   #navigation-top { display: none; }
+//   #navigation-bottom { display: none; }
+//   .vertical-navigation-bar #main-navigation {
+//     margin-bottom: @vgrid;
+//     display: block;
+//     ul { .nav-font; }
+//     a { display: block; }
+//     ul li ul { margin-bottom: 1em; display: block; }
+//     ul li ul li { display: block; text-indent: 0.5em; *zoom: 1; }
+//     ul li.folder .subnav { max-height: 0; overflow: hidden; -webkit-transition: max-height 0.50s; -moz-transition: max-height 0.50s; -ms-transition: max-height 0.50s; transition: max-height 0.50s; }
+//     ul li.folder:hover .subnav { max-height: 9999px; overflow: visible; }
+//   }
+// }
 
 
 /* navigation alignment */

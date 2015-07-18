@@ -13,17 +13,11 @@
     background: @color-quaternary;
 }
 
-// .horizontal-navigation-bar {
-//     nav > ul > li,
-//     nav > ul > li > a { line-height: 1.2em; }
-//     #site-title a { line-height: 1.4em; }
-//     #banner { height: @logoHeightNav; }
-// }
-
 
 // HEADER
 .horizontal-navigation-bar {
     position: relative;
+    z-index: 1200;
 
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -79,44 +73,46 @@
 
             li.search .search-block .sqs-search-ui-button .title { font-size: @nav-font-font-size; }
             li:nth-last-child(1) span.delimiter { display: none; }
-
         }
 
-    }
+        .folder {
+            position: relative;
 
-    nav.main-nav .folder {
-        position: relative;
+            .subnav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: -0.25em;
+                z-index: 4000;
+                zoom: 1;
+            }
 
-        .subnav {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: -0.25em;
-            z-index: 40000;
-            zoom: 1;
-        }
-        .subnav ul {
-            background-color: @navBgColor;
-            border: 1px solid darken(@navBgColor, 5%);
-            padding: (@nav-font-font-size / 2) 0;
-            display: block;
-        }
-        .subnav li {
-            display: list-item;
-            float: none;
-            text-align: left;
-        }
-        .subnav li a {
-            display: block;
-            white-space: nowrap;
-            padding: 0.4em 1em;
-            line-height: 1em;
-        }
+            .subnav ul {
+                background-color: @navBgColor;
+                border: 1px solid darken(@navBgColor, 5%);
+                padding: (@nav-font-font-size / 2) 0;
+                display: block;
+            }
 
-        &:hover .subnav,
-        &:active .subnav,
-        &:focus .subnav {
-            display: block;
+            .subnav li {
+                display: list-item;
+                float: none;
+                text-align: left;
+            }
+
+            .subnav li a {
+                display: block;
+                white-space: nowrap;
+                padding: 0.4em 1em;
+                line-height: 1em;
+            }
+
+            &:hover .subnav,
+            &:active .subnav,
+            &:focus .subnav {
+                display: block;
+            }
+
         }
 
     }
@@ -128,26 +124,20 @@
     margin-left: 40px;
 }
 
-.horizontal-navigation-bar nav ul {
-    // margin-left: 0;
-}
-
-.horizontal-navigation-bar nav ul li a {
-
-}
 
 #main-navigation a:hover,
 #main-navigation .active-link a {
     color: #0200fc !important;
 }
 
+
+// Mobile Nav
 .mobile-nav-container {
     display: none;
 }
 
 
 #main-navigation {
-    z-index: 10000;
     a:link, a:visited { color: @navLinkColor !important; }
     a:hover, a:focus { color: @navLinkHoverColor !important; }
     a:active, .active-link a, .folder .active-folder { color: @navLinkActiveColor !important; }
@@ -160,7 +150,7 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .desk-nav {
         display: none;
     }
@@ -201,35 +191,5 @@
         top: 0;
         right: 20px;
         margin-right: 0;
-    }
-
-    .footer-nav {
-        margin-bottom: 50px;
-    }
-
-    .footer-nav ul {
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        display: -webkit-flex;
-        -webkit-justify-content: space-between;
-        -webkit-align-items: center;
-        -webkit-flex-wrap: wrap;
-    }
-
-    .footer-nav ul li {
-        width: 100%;
-    }
-
-    .footer-nav ul li a {
-        display: block;
     }
 }
