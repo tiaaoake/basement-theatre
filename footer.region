@@ -16,10 +16,10 @@
                 <div class="sqs-col-3 address-block">
                     {.section website}
                         {.if socialAccounts}
-                            <div id="sqs-social" data-content-field="connected-accounts">
+                            <div class="social-icons light" data-content-field="connected-accounts">
                                 {.repeated section socialAccounts}
                                     {.if profileUrl}
-                                        <a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>
+                                        <a class="link social-{serviceName}" title="{screenname}" href="{profileUrl}" target="_blank"></a>
                                     {.end}
                                 {.end}
                             </div>

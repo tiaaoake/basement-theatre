@@ -2,7 +2,24 @@
     Molecule - Social Icons
  */
 .social-icons {
-    .link {
 
+    &.light {
+        .link {
+            color: @color-quaternary;
+        }
+    }
+
+    .link {
+        color: @color-tertiary;
+
+        height: @size-social-icons;
+        width: @size-social-icons;
+        margin-right: 8px;
+
+        font-size: @size-social-icons;
+
+        &:hover {
+            color: @color-tone-2;
+        }
     }
 }
