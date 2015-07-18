@@ -1,6 +1,10 @@
 /*
     Molecule - Form
  */
+input {
+    outline: none;
+}
+
 .form {
 
     h3 {
@@ -13,7 +17,7 @@
         display: flex;
 
         input,
-        .button {
+        button {
             padding: 15px 20px 13px;
             // font-size: 16px;
             background-color: transparent;
@@ -22,7 +26,10 @@
 
         input {
             width: 85%;
-            border-right: 0;
+        }
+
+        input + button {
+            border-left: 0;
         }
     }
 }
@@ -30,5 +37,31 @@
 .form-light {
     h3 {
         color: @color-quaternary;
+    }
+
+    input {
+        color: @color-tint;
+        text-transform: uppercase;
+
+        &::-webkit-input-placeholder {
+            color: @color-quaternary;
+            // text-transform: uppercase;
+        }
+
+        &::-moz-placeholder {
+            color: @color-quaternary;
+            // text-transform: uppercase;
+        }
+
+        &:-ms-input-placeholder {
+            color: @color-quaternary;
+            // text-transform: uppercase;
+        }
+    }
+
+    button:hover {
+        color: @color-tertiary;
+
+        background-color: @color-quaternary;
     }
 }
