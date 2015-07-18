@@ -4,7 +4,7 @@
                 <div class="sqs-col-7">
                     <form class="form">
                         <h3>Sign up to our newsletter</h3>
-                        <div class="form-group">
+                        <div class="form-group form-group-flex">
                             <input type="email" name="email" placeholder="Your Email">
                             <button class="button" type="submit">Ok</button>
                         </div>
