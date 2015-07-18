@@ -1,6 +1,74 @@
 /*
     Organism - Navigation
  */
+.nav-header {
+    position: relative;
+
+    margin-left: 40px;
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        margin-right: 20px;
+
+        color: @color-tertiary;
+        font-size: @nav-font-font-size;
+        font-family: @font-gt-haptik-regular;
+
+        transition: color 0.3s;
+
+        &:hover,
+        .is-active & {
+            color: @color-tone-2;
+        }
+    }
+
+    /*.folder {
+        position: relative;
+
+        .subnav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -0.25em;
+            z-index: 4000;
+            zoom: 1;
+        }
+
+        .subnav ul {
+            background-color: @navBgColor;
+            border: 1px solid darken(@navBgColor, 5%);
+            padding: (@nav-font-font-size / 2) 0;
+            display: block;
+        }
+
+        .subnav li {
+            display: list-item;
+            float: none;
+            text-align: left;
+        }
+
+        .subnav li a {
+            display: block;
+            white-space: nowrap;
+            padding: 0.4em 1em;
+            line-height: 1em;
+        }
+
+        &:hover .subnav,
+        &:active .subnav,
+        &:focus .subnav {
+            display: block;
+        }
+
+    }*/
+}
 
 
 .nav-footer {

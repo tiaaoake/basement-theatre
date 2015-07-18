@@ -7,89 +7,6 @@
 // HEADER
 
 
-.nav-header {
-    position: relative;
-
-    margin-left: 40px;
-
-    ul {
-        padding: 0;
-
-        // font-size: 0;
-        // letter-spacing: 0;
-        // margin-left: -5px;
-
-        li {
-            display: inline-block;
-        }
-
-        li a {
-            // font-size: @nav-font-font-size;
-            font-size: 13px;
-            // padding: 0.5em;
-            // display: inline-block;
-
-            // padding: 0;
-            margin-right: 30px;
-            font-family: @font-gt-haptik-regular;
-            // font-size: 14px;
-            transition: color 0.3s;
-        }
-    }
-
-    .folder {
-        position: relative;
-
-        .subnav {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: -0.25em;
-            z-index: 4000;
-            zoom: 1;
-        }
-
-        .subnav ul {
-            background-color: @navBgColor;
-            border: 1px solid darken(@navBgColor, 5%);
-            padding: (@nav-font-font-size / 2) 0;
-            display: block;
-        }
-
-        .subnav li {
-            display: list-item;
-            float: none;
-            text-align: left;
-        }
-
-        .subnav li a {
-            display: block;
-            white-space: nowrap;
-            padding: 0.4em 1em;
-            line-height: 1em;
-        }
-
-        &:hover .subnav,
-        &:active .subnav,
-        &:focus .subnav {
-            display: block;
-        }
-
-    }
-}
-
-
-.horizontal-navigation-bar .main-nav {
-    // padding-right: 0 !important;
-    // margin-left: 40px;
-}
-
-
-#main-navigation a:hover,
-#main-navigation .active-link a {
-    color: #0200fc !important;
-}
-
 
 // Mobile Nav
 .mobile-nav-container {
@@ -97,11 +14,11 @@
 }
 
 
-#main-navigation {
-    a:link, a:visited { color: @navLinkColor !important; }
-    a:hover, a:focus { color: @navLinkHoverColor !important; }
-    a:active, .active-link a, .folder .active-folder { color: @navLinkActiveColor !important; }
-}
+// #main-navigation {
+//     a:link, a:visited { color: @navLinkColor !important; }
+//     a:hover, a:focus { color: @navLinkHoverColor !important; }
+//     a:active, .active-link a, .folder .active-folder { color: @navLinkActiveColor !important; }
+// }
 
 
 

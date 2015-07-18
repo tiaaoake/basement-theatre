@@ -4,7 +4,7 @@
         {.repeated section @}
 
             {.folder?}
-                <li aria-haspopup="true" class="{collection.typeLabel}-collection{.section active} active-link{.end} folder">
+                <li aria-haspopup="true" class="{.section active}is-active{.end} folder">
                     <a href="#" onClick="return false;"{.if folderActive} class="active-folder"{.end}>{collection.navigationTitle}</a>
                     <div class="subnav">
                         <ul>
@@ -25,7 +25,7 @@
                 </li>
             {.or}
                 {.if collection}
-                    <li class="{collection.typeLabel}-collection{.section active} active-link{.end}">
+                    <li class="{.section active}is-active{.end}">
                         <a href="{collection.fullUrl}">{collection.navigationTitle}</a>
                     </li>
                 {.end}
