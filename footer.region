@@ -10,7 +10,7 @@
                         </div>
                     </form>
 
-                    <squarespace:navigation navigationId="mainNav" template="footer-navigation" />
+                    <squarespace:navigation navigationId="mainNav" template="navigation-footer"/>
                 </div>
 
                 <div class="sqs-col-3 address-block">

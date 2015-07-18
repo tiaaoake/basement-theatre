@@ -1,0 +1,7 @@
+<nav class="nav-footer">
+    {.repeated section items}
+        {.section collection}
+            <a class="{.section active}is-active{.end}" href="{collection.fullUrl}">{navigationTitle}</a>
+        {.end}
+    {.end}
+</nav>

@@ -20,14 +20,18 @@ input {
 
         input,
         button {
-            padding: 15px 20px 13px;
-            // font-size: 16px;
+            padding: 10px 18px;
+
             background-color: transparent;
-            border: 1px solid #FFF;
+            border: 1px solid @color-quaternary;
         }
 
         input {
             width: 85%;
+        }
+
+        button {
+            width: 15%;
         }
 
         input + button {
@@ -39,6 +43,11 @@ input {
 .form-light {
     h3 {
         color: @color-quaternary;
+    }
+
+    input,
+    button {
+        letter-spacing: 2px;
     }
 
     input {
@@ -63,6 +72,8 @@ input {
     button {
         color: @color-quaternary;
         text-transform: uppercase;
+
+        transition: background 0.3s;
 
         &:hover {
             color: @color-tertiary;
