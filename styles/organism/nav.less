@@ -12,6 +12,11 @@
 
     li {
         display: inline-block;
+
+        &.is-active a,
+        a:hover {
+            color: @color-tone-2;
+        }
     }
 
     a {
@@ -22,11 +27,6 @@
         font-family: @font-gt-haptik-regular;
 
         transition: color 0.3s;
-
-        &:hover,
-        .is-active & {
-            color: @color-tone-2;
-        }
     }
 
     /*.folder {
