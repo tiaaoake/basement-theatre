@@ -1139,94 +1139,6 @@ body.canvas-setting-site-width {
 }
 
 
-/* navigation postion */
-
-// body.top-navigation-position-above-banner {
-//   #navigation-top { display: block; }
-//   #navigation-bottom { display: none; }
-// }
-
-// body.top-navigation-position-below-banner {
-//   #navigation-top { display: none; }
-//   #navigation-bottom { display: block; }
-// }
-
-// body.top-navigation-position-none {
-//   #navigation-top { display: none; }
-//   #navigation-bottom { display: none; }
-//   .vertical-navigation-bar #main-navigation {
-//     margin-bottom: @vgrid;
-//     display: block;
-//     ul { .nav-font; }
-//     a { display: block; }
-//     ul li ul { margin-bottom: 1em; display: block; }
-//     ul li ul li { display: block; text-indent: 0.5em; *zoom: 1; }
-//     ul li.folder .subnav { max-height: 0; overflow: hidden; -webkit-transition: max-height 0.50s; -moz-transition: max-height 0.50s; -ms-transition: max-height 0.50s; transition: max-height 0.50s; }
-//     ul li.folder:hover .subnav { max-height: 9999px; overflow: visible; }
-//   }
-// }
-
-
-/* navigation alignment */
-
-// body.top-navigation-alignment-left {
-//   .horizontal-navigation-bar {
-//     text-align: left;
-
-//     #sqs-social {
-//       width: auto;
-//       /*margin-top: (@nav-font-font-size/2);*/
-//       /*margin-bottom: (@nav-font-font-size/2);*/
-//       margin-top: (@site-name-font-font-size/2);
-//       /*margin-bottom: (@site-name-font-font-size/2);*/
-//       float: left;
-//       text-align: right;
-//     }
-//   }
-//   &.canvas-setting-site-width .horizontal-navigation-bar #sqs-social {
-//     padding-right: @cnvsPadding;
-//   }
-// }
-
-// body.top-navigation-alignment-center {
-//   .horizontal-navigation-bar {
-//     text-align: center;
-
-//     #sqs-social {
-//       width: auto;
-//       margin: auto;
-//       position: relative;
-//       text-align: inherit;
-//       padding-left: 0;
-//       line-height: inherit !important;
-//       margin: 1em !important;
-//     }
-//   }
-//   &.banner-content-empty.canvas-setting-full-width .horizontal-navigation-bar {
-//     padding-right: @cnvsPadding/2;
-//     padding-left: @cnvsPadding/2;
-
-//     #site-title-wrapper,
-//     nav {
-//       padding: 0 @cnvsPadding/2;
-//     }
-//   }
-// }
-
-// body.top-navigation-alignment-right {
-//   .horizontal-navigation-bar {
-//     text-align: right;
-
-//     #sqs-social {
-//       width: auto;
-//       margin: auto;
-//       position: relative;
-//       text-align: inherit;
-//       padding-left: @navSpacing;
-//     }
-//   }
-// }
-
 
 /* logo in navigation */
 
@@ -1274,30 +1186,30 @@ body.banner-content-empty {
   //   }
   // }
 
-  .horizontal-navigation-bar {
+  // .horizontal-navigation-bar {
 
-    #banner-wrapper,
-    #site-title-wrapper {
-      vertical-align: middle;
-      display: inline-block;
-    }
+  //   #banner-wrapper,
+  //   #site-title-wrapper {
+  //     vertical-align: middle;
+  //     display: inline-block;
+  //   }
 
-    #banner-wrapper a,
-    #site-title-wrapper a {
-      display: block;
-      padding: 0;
-    }
+  //   #banner-wrapper a,
+  //   #site-title-wrapper a {
+  //     display: block;
+  //     padding: 0;
+  //   }
 
-    #site-title a {
-      .site-name-font;
-    }
+  //   #site-title a {
+  //     .site-name-font;
+  //   }
 
-    #banner-wrapper #banner,
-    #site-title-wrapper #site-title {
-      width: auto;
-    }
+  //   #banner-wrapper #banner,
+  //   #site-title-wrapper #site-title {
+  //     width: auto;
+  //   }
 
-  }
+  // }
 
 }
 
@@ -1754,12 +1666,6 @@ body.hide-tags-categories .article-meta {
 /* UI
 ***********************************************/
 
-// Move cart pill down when nav is at the top
-@media only screen and (min-width: 700px) {
-  .top-navigation-position-above-banner {
-    .absolute-cart-box { top: 65px; }
-  }
-}
 
 
 // Form button font-family
@@ -1771,21 +1677,21 @@ body.hide-tags-categories .article-meta {
 
 // Kill Share when empty
 .squarespace-social-buttons.button-style.empty {
-  display: none;
+  // display: none;
 }
 
 // Share button
-.squarespace-social-buttons.inline-style {
-  vertical-align: top;
-  margin-left: 1em;
-}
-.squarespace-social-buttons.inline-style .ss-social-button {
-  line-height: 18px;
-}
-.squarespace-social-buttons .ss-social-list-wrapper {
-  text-align: left;
-  /*top: @vgrid !important;*/
-}
+// .squarespace-social-buttons.inline-style {
+//   vertical-align: top;
+//   margin-left: 1em;
+// }
+// .squarespace-social-buttons.inline-style .ss-social-button {
+//   line-height: 18px;
+// }
+// .squarespace-social-buttons .ss-social-list-wrapper {
+//   text-align: left;
+//   /*top: @vgrid !important;*/
+// }
 
 // Adjust frontend edit outline and toolbar
 #banner-area-wrapper.sqs-frontend-edit-wrapper.sqs-frontend-outline,

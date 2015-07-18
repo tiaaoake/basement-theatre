@@ -42,7 +42,6 @@
 
                         <div id="sidebar-one-wrapper" class="vertical-navigation-bar-wrapper">
                             <div id="sidebar-one" class="vertical-navigation-bar">
-                                <squarespace:navigation navigationId="mainNav" template="main-navigation" />
                                 {.section website}
                                 <div class="site-info">
                                     {.if siteTitle}<h3 class="site-title">{siteTitle}</h3>{.end}

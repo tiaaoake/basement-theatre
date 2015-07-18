@@ -1,5 +1,5 @@
 {.section items}
-    <nav id="main-navigation" class="main-nav" data-content-field="navigation">
+    <nav class="nav-footer" data-content-field="navigation">
         <ul>
         {.repeated section @}
 
