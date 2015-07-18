@@ -35,18 +35,12 @@
     padding: 10px 0;
 
     nav {
-        position: relative;
-
-        display: inline-block;
-        width: auto;
-        margin: auto;
-        vertical-align: middle;
 
         ul {
             padding: 0;
 
-            font-size: 0;
-            letter-spacing: 0;
+            // font-size: 0;
+            // letter-spacing: 0;
             // margin-left: -5px;
 
             li {
@@ -65,14 +59,6 @@
                 // font-size: 14px;
                 transition: color 0.3s;
             }
-
-            li.search {
-                min-width: (@gutter * 2);
-                float: right;
-            }
-
-            li.search .search-block .sqs-search-ui-button .title { font-size: @nav-font-font-size; }
-            li:nth-last-child(1) span.delimiter { display: none; }
         }
 
         .folder {
@@ -118,10 +104,16 @@
     }
 }
 
+.main-nav {
+    position: relative;
+
+    margin-left: 40px;
+}
+
 
 .horizontal-navigation-bar .main-nav {
-    padding-right: 0 !important;
-    margin-left: 40px;
+    // padding-right: 0 !important;
+    // margin-left: 40px;
 }
 
 
