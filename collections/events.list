@@ -1,8 +1,4 @@
 {.repeated section items}
-    {.main-image?}
-        {.main-image}
-    {.end}
-
     {@|apply whats-on-item.block}
     <p>TEST1</p>
 {.end}
