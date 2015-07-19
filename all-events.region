@@ -1,0 +1,25 @@
+
+<section class="whats-on sqs-layout sqs-grid-12 columns-12">
+
+    <div class="row sqs-row">
+        <div class="sqs-col sqs-col-12">
+            <squarespace:query collection="whats-on">
+                {@|apply whats-on-item.block}
+            </squarespace:query>
+        </div>
+    </div>
+</section>
+
+
+<squarespace:query collection="{.section collection}{urlId}{.end}">
+
+  <div class="featured-wrapper">
+    {.repeated section items}
+    <div class="featured-post">
+        {.main-image?}<img {@|image-meta} />{.end}
+        <h2>{title}</h2>
+      </div>
+    {.end}
+  </div>
+
+</squarespace:query>
