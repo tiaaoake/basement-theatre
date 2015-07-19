@@ -12,16 +12,6 @@
     </div>
 </section>
 
-
-<squarespace:query collection="{.section collection}{urlId}{.end}">
-
-  <div class="featured-wrapper">
-    {.repeated section items}
-    <div class="featured-post">
-        {.main-image?}<img {@|image-meta} />{.end}
-        <h2>{title}</h2>
-      </div>
-    {.end}
-  </div>
-
-</squarespace:query>
+<div class="main-content" data-content-field="main-content" data-collection-id="{collection.id}">
+    {squarespace.main-content}
+</div>
