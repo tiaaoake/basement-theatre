@@ -1,4 +1,9 @@
 {.repeated section items}
+    {@|apply whats-on-item.block}
+    <p>TEST1</p>
+{.end}
+
+{.repeated section items}
 
   <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
 

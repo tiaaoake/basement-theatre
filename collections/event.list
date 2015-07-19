@@ -1,0 +1,4 @@
+{.repeated section items}
+    {@|apply whats-on-item.block}
+    <p>TEST2</p>
+{.end}
