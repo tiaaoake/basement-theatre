@@ -73,12 +73,19 @@
 
                                 <!-- // page thumbnail image as banner image -->
                                 {.section collection}
+                                    {.if mainImage}
+                                        {.section mainImage}
+                                            <div id="page-thumb" class="content-fill">
+                                                <img {@|image-meta} />
+                                            </div>
+                                        {.end}
+                                    {.end}
+                                {.end}
 
-                                    <pre>{@|json-pretty}</pre>
-
-                                    {.section mainImage}
+                                {.section item}
+                                    {.if bannerImg}
                                         <div id="page-thumb" class="content-fill">
-                                            <img {@|image-meta} />
+                                            <img {@|bannerImg} />
                                         </div>
                                     {.end}
                                 {.end}
