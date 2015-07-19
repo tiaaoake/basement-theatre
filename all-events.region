@@ -3,7 +3,7 @@
 
     <div class="row sqs-row">
         <div class="sqs-col sqs-col-12">
-            <squarespace:query collection="whats-on">
+            <squarespace:query collection="{.section collection}{urlId}{.end}">
                 {@|apply whats-on-item.block}
             </squarespace:query>
         </div>
