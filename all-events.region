@@ -4,7 +4,9 @@
     <div class="row sqs-row">
         <div class="sqs-col sqs-col-12">
             <squarespace:query collection="{.section collection}{urlId}{.end}">
-                {@|apply whats-on-item.block}
+                {.repeated section items}
+                    {@|apply whats-on-item.block}
+                {.end}
             </squarespace:query>
         </div>
     </div>
