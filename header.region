@@ -84,9 +84,10 @@
 
                                 {.section item}
                                     <script>console.log({@|json-pretty})</script>
-                                    {.if assetUrl}
+                                    <img {@|image-meta} />
+                                    {.section mainImage}
                                         <div id="page-thumb" class="content-fill">
-                                            <img {@|assetUrl} />
+                                            <img {@|image-meta} />
                                         </div>
                                     {.end}
                                 {.end}
