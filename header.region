@@ -83,12 +83,9 @@
                                 {.end}
 
                                 {.section item}
-
-                                    {.section mainImage}
-                                        <div id="page-thumb" class="content-fill">
-                                            <img {@|image-meta} />
-                                        </div>
-                                    {.end}
+                                    <div id="page-thumb" class="content-fill">
+                                        <img {@|image-meta} />
+                                    </div>
                                 {.end}
 
                                 <div class="banner-overlay-event"></div>
