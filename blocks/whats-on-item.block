@@ -6,8 +6,8 @@
                     <img src="{bannerImg}{assetUrl}">
 
                     <div class="whats-on-buttons">
-                        <button class="btn info" data-flip>MORE INFO</button>
-                        <a class="btn book" href="{fullUrl}">BOOK NOW</a>
+                        <button class="btn info" data-flip>More Info</button>
+                        <a class="btn book" href="{fullUrl}">Book Now</a>
                     </div>
                 </div>
 
@@ -22,8 +22,8 @@
                     <p>{excerpt}</p>
 
                     <div class="whats-on-buttons">
-                        <button class="btn info" data-flip-back>BACK</button>
-                        <a class="btn book" href="{fullUrl}">BOOK NOW</a>
+                        <button class="btn info" data-flip-back>Back</button>
+                        <a class="btn book" href="{fullUrl}">Book Now</a>
                     </div>
                 </div>
             </div>

@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         {.if template.mobileStylesEnabled}
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="apple-mobile-web-app-title" content="Basement">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="apple-mobile-web-app-title" content="Basement">
         {.end}
 
         {squarespace-headers}
@@ -16,7 +16,7 @@
         <squarespace:script src="jquery.flip.js" combo="true" />
     </head>
 
-    <body class="{squarespace.page-classes}{.section website}{.if logoImageUrl} has-logo-image{.or} no-logo-image{.end}{.end}{.section collection}{.section mainImage} has-page-thumbnail{.end}{.end}" id="{squarespace.page-id}">
+    <body class="{squarespace.page-classes}">
 
         <div class="mobile-nav-container">
             <div class="mobile-nav-button">
@@ -73,6 +73,9 @@
 
                                 <!-- // page thumbnail image as banner image -->
                                 {.section collection}
+
+                                    <pre>{@|json-pretty}</pre>
+
                                     {.section mainImage}
                                         <div id="page-thumb" class="content-fill">
                                             <img {@|image-meta} />
