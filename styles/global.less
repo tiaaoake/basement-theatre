@@ -6,10 +6,10 @@
 //tweak: { type: 'image', title: 'Site Background Image', target: 'body', category: 'Site Wide' }
 .bg-image {
   //background-image: url('/assets/groovepaper.png');
-  background-position: top left;
-  background-size: auto;
-  background-attachment: scroll;
-  background-repeat: repeat;
+  // background-position: top left;
+  // background-size: auto;
+  // background-attachment: scroll;
+  // background-repeat: repeat;
 }
 
 //tweak: { type: 'value', title: 'Site Width', min: 480, max: 1280, step: 10, target: '#page-body', property: 'width', category: 'Site Wide' }
@@ -185,13 +185,13 @@
 
 //tweak: { type: 'font', title: 'Heading 1', target: 'h1:not(.page-title)', loadAllVariants: true, category: 'Main Content' }
 .heading1 {
-  font-family: Muli, Helvetica, Arial, sans-serif;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  letter-spacing: 0px;
-  text-transform: none;
-  line-height: 1.8em;
+    // font-family: Muli, Helvetica, Arial, sans-serif;
+    font-size: @heading1-font-size;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.8em;
 }
 @heading1-font-size: 30px;
 
@@ -200,7 +200,7 @@
 
 //tweak: { type: 'font', title: 'Heading 2', target: 'h2', loadAllVariants: true, category: 'Main Content' }
 .heading2 {
-  font-family: Muli, Helvetica, Arial, sans-serif;
+  // font-family: Muli, Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
@@ -215,7 +215,7 @@
 
 //tweak: { type: 'font', title: 'Heading 3', target: 'h3', loadAllVariants: true, category: 'Main Content' }
 .heading3 {
-  font-family: Muli, Helvetica, Arial, sans-serif;
+  // font-family: Muli, Helvetica, Arial, sans-serif;
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
@@ -475,7 +475,7 @@ input,
 select,
 textarea { .body-font; }
 
-h1:not(#site-title):not(#page-title) { .heading1; }
+h1 { .heading1; }
 h2 { .heading2; }
 h3 { .heading3; }
 
