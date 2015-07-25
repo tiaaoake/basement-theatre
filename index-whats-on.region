@@ -1,9 +1,10 @@
-<section class="whats-on sqs-layout sqs-grid-12 columns-12">
+<section class="whats-on">
     <div class="whats-on-title">
         <h1 class="text-align-center">WHATS ON</h1>
     </div>
 
-    <div class="row sqs-row">
+    <div class="sqs-row">
+        <h1>What's On</h1>
         <div class="sqs-col sqs-col-12">
             <squarespace:query collection="whats-on" limit="3">
                 {@|apply whats-on-item-featured.block}
@@ -11,7 +12,7 @@
         </div>
     </div>
 
-    <div class="row sqs-row">
+    <div class="sqs-row">
         <div class="coming-soon">
             <h3 class="text-align-center">COMING SOON</h1>
         </div>
