@@ -13,23 +13,21 @@
                         </div>
                     </div>
 
-                    <div class="whats-on-buttons">
-                        <button class="btn info" data-flip>More Info</button>
-                        <a class="btn book" href="{fullUrl}">Book Now</a>
+                    <div class="button-group">
+                        <button class="button info" data-flip>More Info</button>
+                        <a class="button book" href="{fullUrl}">Book Now</a>
                     </div>
 
 
                 </div>
 
                 <div class="back">
-                    <!-- <div class="img-container"> -->
-                        <p>{excerpt}</p>
+                    <p>{excerpt}</p>
 
-                        <div class="whats-on-buttons">
-                            <button class="btn info" data-flip-back>Back</button>
-                            <a class="btn book" href="{fullUrl}">Book Now</a>
-                        </div>
-                    <!-- </div> -->
+                    <div class="button-group">
+                        <button class="button info" data-flip-back>Back</button>
+                        <a class="button book" href="{fullUrl}">Book Now</a>
+                    </div>
                 </div>
             </div>
         </div>

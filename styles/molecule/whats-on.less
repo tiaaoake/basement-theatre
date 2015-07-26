@@ -143,6 +143,83 @@
             width: 100%;
         }
     }
+
+
+    // Button
+    .button-group {
+        box-sizing: border-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 15px;
+
+        background-color: @color-quaternary;
+        border-top: 1px solid @color-primary;
+
+        .button {
+            display: block;
+            width: calc(100% / 2 - 5px);
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            text-align: center;
+
+            border: 1px solid @color-primary;
+
+            transition: all 0.3s;
+
+            &:hover {
+                color: @color-tertiary;
+
+                background-color: @color-tertiary;
+                border-color: @color-tertiary;
+            }
+
+            &.info {
+                color: @color-quaternary;
+
+                background-color: @color-primary;
+            }
+
+            &.book {
+                color: @color-primary;
+
+                background-color: @color-quaternary;
+            }
+        }
+    }
+
+    .button-group .btn {
+        // display: block;
+        // width: 49%;
+        // padding-top: 10px;
+        // padding-bottom: 10px;
+
+
+    }
+
+    // .button-group .info {
+    //     color: #FFF;
+    //     background-color: #0200fc;
+    // }
+
+    // .button-group .book {
+    //     color: #0200fc;
+    //     // text-align: center;
+    //     background-color: #FFF;
+    // }
+
+    .button-group .info:hover,
+    .button-group .book:hover {
+        // color: #FFF;
+        // background-color: #000;
+        // border: 1px solid #000;
+    }
 }
 
 
@@ -254,55 +331,4 @@
     line-height: 1.5;
     text-align: center;
     color: #000;
-}
-
-
-
-
-
-// Button
-.whats-on-buttons {
-    /*position: absolute;*/
-    /*bottom: 0;*/
-
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 20px;
-    margin-top: 20px;
-
-    background-color: #FFF;
-    box-sizing: border-box;
-    border-top: 1px solid #0200fc;
-}
-
-.whats-on-buttons .btn {
-    display: block;
-    width: 49%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #0200fc;
-    transition: all 0.3s;
-}
-
-.whats-on-buttons .info {
-    color: #FFF;
-    background-color: #0200fc;
-}
-
-.whats-on-buttons .book {
-    color: #0200fc;
-    text-align: center;
-    background-color: #FFF;
-}
-
-.whats-on-buttons .info:hover,
-.whats-on-buttons .book:hover {
-    color: #FFF;
-    background-color: #000;
-    border: 1px solid #000;
 }
