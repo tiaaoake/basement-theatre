@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="back">
-                    <p>{excerpt}</p>
+                    {excerpt}
 
                     <div class="button-group">
                         <button class="button highlight" data-flip-back>Back</button>
