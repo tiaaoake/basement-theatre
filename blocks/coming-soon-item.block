@@ -1,11 +1,9 @@
-{.repeated section items}
-    <div class="coming-soon-item">
-        <div class="sqs-col sqs-col-4 content-fill event-image">
-            <img {@|image-meta}>
-        </div>
-        <div class="sqs-col sqs-col-7 event-meta">
-            <h3 class="title"><a href="{fullUrl}">{title}</a></h3>
-            <h4 class="dates"><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h4>
-        </div>
+<div class="coming-soon-item">
+    <div class="sqs-col sqs-col-4 content-fill event-image">
+        <img {@|image-meta}>
     </div>
-{.end}
+    <div class="sqs-col sqs-col-7 event-meta">
+        <h3 class="title"><a href="{fullUrl}">{title}</a></h3>
+        <h4 class="dates"><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h4>
+    </div>
+</div>

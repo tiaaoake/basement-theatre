@@ -5,7 +5,7 @@
 .header-brand {
     position: absolute;
     top: 24px;
-    right: -16px;
+    right: -60px;
     z-index: 1000;
 
     width: 230px;
@@ -17,7 +17,9 @@
 
     transition: all 0.1s;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: @bp-standard-max) {
+        right: 0;
+
         width: 30px;
         height: 30px;
         margin-top: 15px;
@@ -34,10 +36,10 @@
 
         background-image: url('@{folder-img}/logo-icon.png');
 
-        @media screen and (max-width: 768px) {
-            margin-top: 15px;
+        @media screen and (max-width: @bp-standard-max) {
             width: 30px;
             height: 30px;
+            margin-top: 15px;
         }
     }
 }

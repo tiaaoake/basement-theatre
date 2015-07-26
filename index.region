@@ -15,7 +15,9 @@
 
             <div class="sqs-col-12 coming-soon-items">
                 <squarespace:query collection="whats-on" category="Coming Soon" limit="4">
-                    {@|apply coming-soon-item.block}
+                    {.repeated section items}
+                        {@|apply coming-soon-item.block}
+                    {.end}
                 </squarespace:query>
             </div>
 <!--             <div class="sqs-col sqs-col-12">

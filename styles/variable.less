@@ -47,7 +47,14 @@
 
 
 // Breakpoints
-@bp-small-min: 601px;
+@bp-tiny-max: 600px;
+@bp-small-min: @bp-tiny-max + 1px;
+@bp-small-max: 800px;
+@bp-medium-min: @bp-small-max + 1px;
+@bp-medium-max: 1000px;
+@bp-standard-min: @bp-medium-max + 1px;
+@bp-standard-max: 1200px;
+@bp-large-min: @bp-standard-max + 1px;
 
 
 // Padding
