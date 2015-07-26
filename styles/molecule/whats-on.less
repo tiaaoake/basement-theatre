@@ -123,7 +123,8 @@
     transition: all 0.3s;
 }
 
-.front, .back {
+.front,
+.back {
     position: absolute;
     top: 0;
     left: 0;
@@ -217,4 +218,57 @@
     width: 140px;
     padding: 10px;
     background-color: #FFF;
+
+    h2 {
+        width: 100%;
+    }
+}
+
+
+
+// Button
+.whats-on-buttons {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-top: 1px solid #0200fc;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+}
+
+.whats-on-buttons .btn {
+    display: block;
+    width: 49%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #0200fc;
+    transition: all 0.3s;
+}
+
+.whats-on-buttons .info {
+    color: #FFF;
+    background-color: #0200fc;
+}
+
+.whats-on-buttons .book {
+    color: #0200fc;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.whats-on-buttons .info:hover,
+.whats-on-buttons .book:hover {
+    color: #FFF;
+    background-color: #000;
+    border: 1px solid #000;
 }

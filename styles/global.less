@@ -13,7 +13,7 @@
 }
 
 //tweak: { type: 'value', title: 'Site Width', min: 480, max: 1280, step: 10, target: '#page-body', property: 'width', category: 'Site Wide' }
-@siteWidth: 960px;
+// @constrain-width: 960px;
 
 //tweak: { type: 'dropdown', title: 'Canvas Setting', options:[ 'Full Width', 'Site Width' ], default: 'Full Width', target: '#canvas', category: 'Site Wide' }
 
@@ -390,7 +390,7 @@
 
 @sqsGridNegateGutter: true;
 
-@pageWidth: @siteWidth + (@cnvsPadding / 2);
+@pageWidth: @constrain-width + (@cnvsPadding / 2);
 
 
 /* COLORS & BACKGROUNDS
@@ -453,7 +453,7 @@ a:hover, a:active { color: @bodyLinkHoverColor; }
 /* EVENT SPECIFIC STYLES */
 #event-full-width {
   margin: 0 auto;
-  max-width:960px;
+  max-width: @constraint-width;
 }
 
 #page-body.event {
@@ -565,7 +565,7 @@ nav ul, nav ol { margin: 0; }
   border-color: @bordersColor;
   padding: @articleSpacing 0 0;
   width: 100%;
-  max-width: @siteWidth;
+  max-width: @constrain-width;
   margin: 0 auto;
 
   ul {
@@ -708,7 +708,7 @@ span.delimiter {
 
 #banner-area,
 #page-footer {
-  width: @siteWidth;
+  width: @constrain-width;
   max-width: 100%;
   clear: both;
   margin: 0 auto;
@@ -728,7 +728,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 
 
 #page-header {
-  max-width:960px;
+  max-width: @constraint-width;
   margin: 0 auto;
 }
 
@@ -738,7 +738,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 }
 
 #banner-area, #banner-area-wrapper {
-  max-width:960px;
+  max-width: @constraint-width;
 }
 
 #banner-area-wrapper {
@@ -767,7 +767,7 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 }
 
 #content-wrapper {
-  max-width:960px;
+  max-width: @constraint-width;
   margin: auto;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1118,7 +1118,7 @@ body.canvas-setting-full-width {
 
 body.canvas-setting-site-width {
 
-  #canvas-wrapper { width: @siteWidth; max-width: 100%; }
+  #canvas-wrapper { width: @constrain-width; max-width: 100%; }
 
   #canvas { padding: 0 @cnvsPadding; }
 
@@ -1446,7 +1446,7 @@ body.banner-alignment-right {
     border-right-color: transparent;
   }
 
-  #sidebar-wrapper { position: absolute; top: 0; left: 0; width: 100%; max-width: @siteWidth; margin: 0 auto; }
+  #sidebar-wrapper { position: absolute; top: 0; left: 0; width: 100%; max-width: @constrain-width; margin: 0 auto; }
 
   #sidebar-one-wrapper,
   #sidebar-two-wrapper {
