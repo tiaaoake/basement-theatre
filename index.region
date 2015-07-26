@@ -1,15 +1,15 @@
 <section class="whats-on sqs-layout">
 
     <div class="sqs-row-wide">
-        <h1 class="text-align-center">What's On</h1>
-        <div class="sqs-col sqs-col-12">
+        <h1 class="heading-main text-align-center">What's On</h1>
+        <div class="sqs-col-12">
             <squarespace:query collection="whats-on" featured="true" limit="3">
                 {@|apply whats-on-item.block}
             </squarespace:query>
         </div>
 
-        <div class="coming-soon">
-            <h4 class="text-align-center">Coming Soon</h4>
+        <div class="sqs-col-12 coming-soon">
+            <h4 class="heading-small text-align-center">Coming Soon</h4>
 
             <div class="sqs-col sqs-col-12 coming-soon-row">
                 <squarespace:query collection="whats-on" category="Coming Soon" limit="4">

@@ -2,7 +2,7 @@
     <div class="sqs-col sqs-col-3">
         <div class="coming-soon-thumb sqs-row" id="card1">
             <div class="content-fill coming-soon-image" id="post-image">
-                <img src="{bannerImg}{assetUrl}">
+                <img {@|image-meta}>
             </div>
             <div class="coming-soon-details">
                 <h2><a href="{fullUrl}">{title}</a></h2>
