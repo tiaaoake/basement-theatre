@@ -1,7 +1,8 @@
-{.repeated section items}
-    {@|apply whats-on-item.block}
-    <p>TEST1</p>
-{.end}
+<div class="sqs-col-12 whats-on-items">
+    {.repeated section items}
+        {@|apply whats-on-item.block}
+    {.end}
+</div>
 
 {.repeated section items}
 

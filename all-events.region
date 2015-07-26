@@ -1,5 +1,5 @@
-<section class="whats-on sqs-layout sqs-grid-12 columns-12">
-    <div data-content-field="main-content" data-collection-id="{collection.id}">
+<section class="whats-on sqs-layout">
+    <div class="sqs-row-wide" data-content-field="main-content" data-collection-id="{collection.id}">
         {squarespace.main-content}
     </div>
 
