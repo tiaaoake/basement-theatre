@@ -5,7 +5,7 @@
                 <div class="front">
 
                     <div class="event-details">
-                        <img class="event-image" src="{bannerImg}{assetUrl}">
+                        <img class="event-image" src="{assetUrl}">
 
                         <div class="event-meta">
                             <h2><a href="{fullUrl}">{title}</a></h2>
@@ -14,9 +14,9 @@
                     </div>
 
                     <div class="whats-on-buttons">
-                            <button class="btn info" data-flip>More Info</button>
-                            <a class="btn book" href="{fullUrl}">Book Now</a>
-                        </div>
+                        <button class="btn info" data-flip>More Info</button>
+                        <a class="btn book" href="{fullUrl}">Book Now</a>
+                    </div>
 
 
                 </div>
