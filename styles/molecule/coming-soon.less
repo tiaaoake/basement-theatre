@@ -10,7 +10,9 @@
 }
 
 .coming-soon-items {
-    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
 
     border-bottom: 1px solid @color-quaternary;
 }
@@ -22,6 +24,7 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    width: ~"calc(100% / 4 - 5px)"; // 'Escaped string' for LESS - stupid right...?
 
     .event-image {
         height: 100px;
