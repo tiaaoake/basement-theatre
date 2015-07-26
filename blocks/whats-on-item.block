@@ -6,8 +6,9 @@
                     <div class="event-details">
                         <img class="event-image" src="{assetUrl}">
                         <div class="event-meta">
-                            <h2><a href="{fullUrl}">{title}</a></h2>
-                            <h3><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h3>
+                            <h2>{title}</h2>
+                            <h4><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h4>
+                            <h4>{startDate|date %b}</h4>
                         </div>
                     </div>
 
