@@ -1,10 +1,10 @@
-{.repeated section items}
+{.repeated section items}c=
     <div class="sqs-col sqs-col-4">
         <div class="whats-on-item hover-reveal">
             <div class="flipper" data-flipper>
                 <div class="front">
                     <div class="event-details">
-                        <img class="event-image" src="{@|image-meta}">
+                        <img class="event-image" {@|image-meta}>
                         <div class="event-meta">
                             <h3 class="title">{title}</h3>
                             <h4 class="dates"><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h4>
