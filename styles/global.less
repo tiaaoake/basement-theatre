@@ -546,7 +546,6 @@ nav ul, nav ol { margin: 0; }
 // Text shrink
 .js-text-shrink {
   width: 100%;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -597,8 +596,6 @@ nav ul, nav ol { margin: 0; }
   li.no-prev,
   li.no-next {
     width: 49%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
@@ -672,8 +669,6 @@ span.delimiter {
   padding: 0;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -730,22 +725,28 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
 }
 
 #page-thumb {
-  display:none;
+  display: none;
   height: 100%;
 }
 
-#banner-area, #banner-area-wrapper {
-  max-width: @constraint-width;
-}
-
+#banner-area,
 #banner-area-wrapper {
-  margin: 0 17px;
+    max-width: @constraint-width;
 }
 
 #banner-area {
-  height: auto;
-  padding-top: @bannerSpacing;
-  padding-bottom: @bannerSpacing;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+  // height: auto;
+  // padding-top: @bannerSpacing;
+  // padding-bottom: @bannerSpacing;
 }
 
 #page-body-wrapper {
@@ -758,8 +759,6 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
   padding: 0 1%;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -768,8 +767,6 @@ body:not(.has-page-thumbnail) #page-header-wrapper, body:not(.page-thumbnail-as-
   margin: auto;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 #content {
@@ -926,8 +923,6 @@ article {
     .read-more {
       padding: 4px 8px;
       color: @bodyLinkColor !important;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
       border-radius: 3px;
     }
 
@@ -1731,10 +1726,6 @@ article,
 
 // CSS3 special bits
 .sqs-search-ui {
-  -moz-transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
