@@ -3,10 +3,8 @@
         <div class="whats-on-item hover-reveal">
             <div class="flipper" data-flipper>
                 <div class="front">
-
                     <div class="event-details">
                         <img class="event-image" src="{assetUrl}">
-
                         <div class="event-meta">
                             <h2><a href="{fullUrl}">{title}</a></h2>
                             <h3>{customContent.dates}</h3>
@@ -17,8 +15,6 @@
                         <button class="button highlight" data-flip>More Info</button>
                         <a class="button" href="{fullUrl}">Book Now</a>
                     </div>
-
-
                 </div>
 
                 <div class="back">

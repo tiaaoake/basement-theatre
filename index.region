@@ -7,9 +7,7 @@
                 {@|apply whats-on-item.block}
             </squarespace:query>
         </div>
-    </div>
 
-    <div class="sqs-row">
         <div class="coming-soon">
             <h3 class="text-align-center">Coming Soon</h1>
         </div>
