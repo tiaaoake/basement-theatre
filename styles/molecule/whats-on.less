@@ -163,10 +163,15 @@
 
         .button {
             display: block;
-            width: calc(100% / 2 - 5px);
+            width: ~"calc(100% / 2 - 5px)"; // 'Escaped string' for LESS - stupid right...?
             padding-top: 10px;
             padding-bottom: 10px;
 
+            font-size: 0.875em; // 14px
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
             text-align: center;
 
             border: 1px solid @color-primary;
