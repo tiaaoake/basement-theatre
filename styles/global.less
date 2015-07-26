@@ -382,7 +382,11 @@
 /* COLORS & BACKGROUNDS
 ***********************************************/
 
-body { .bg-image; background-color: @bgColor; color: @textColor; }
+body {
+    color: @textColor;
+
+    background-color: @bgColor;
+}
 
 a:link, a:visited { color: @bodyLinkColor; }
 a:hover, a:active { color: @bodyLinkHoverColor; }
