@@ -173,24 +173,20 @@
             text-transform: uppercase;
             text-align: center;
 
-            border: 1px solid @color-primary;
+            border: 1px solid @color-quaternary;
+            background-color: transparent;
+            color: @color-primary;
 
             transition: all 0.3s;
 
-            &.info {
+            &.highlight {
                 color: @color-quaternary;
 
                 background-color: @color-primary;
             }
 
-            &.book {
-                color: @color-primary;
-
-                background-color: @color-quaternary;
-            }
-
             &:hover {
-                color: @color-tertiary;
+                color: @color-quaternary;
 
                 background-color: @color-tertiary;
                 border-color: @color-tertiary;
