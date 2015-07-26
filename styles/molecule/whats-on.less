@@ -11,7 +11,7 @@
         margin-bottom: 60px;
 
         color: @color-quaternary;
-        font-size: 3.375em; // 54px MAKE THIS GLOBAL
+        font-size: 3.75em; // 60px MAKE THIS GLOBAL?
         text-transform: uppercase;
     }
 }
@@ -20,7 +20,7 @@
     position: relative;
 
     height: 100%;
-    min-height: 422px;
+    min-height: 400px;
     margin-right: 10px;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -94,7 +94,6 @@
 
         overflow: hidden;
         width: 100%;
-        // min-height: 290px;
     }
 
     .event-image {
@@ -164,8 +163,8 @@
         .button {
             display: block;
             width: ~"calc(100% / 2 - 5px)"; // 'Escaped string' for LESS - stupid right...?
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
 
             font-size: 0.875em; // 14px
             font-weight: 700;
@@ -178,13 +177,6 @@
 
             transition: all 0.3s;
 
-            &:hover {
-                color: @color-tertiary;
-
-                background-color: @color-tertiary;
-                border-color: @color-tertiary;
-            }
-
             &.info {
                 color: @color-quaternary;
 
@@ -196,34 +188,14 @@
 
                 background-color: @color-quaternary;
             }
+
+            &:hover {
+                color: @color-tertiary;
+
+                background-color: @color-tertiary;
+                border-color: @color-tertiary;
+            }
         }
-    }
-
-    .button-group .btn {
-        // display: block;
-        // width: 49%;
-        // padding-top: 10px;
-        // padding-bottom: 10px;
-
-
-    }
-
-    // .button-group .info {
-    //     color: #FFF;
-    //     background-color: #0200fc;
-    // }
-
-    // .button-group .book {
-    //     color: #0200fc;
-    //     // text-align: center;
-    //     background-color: #FFF;
-    // }
-
-    .button-group .info:hover,
-    .button-group .book:hover {
-        // color: #FFF;
-        // background-color: #000;
-        // border: 1px solid #000;
     }
 }
 
