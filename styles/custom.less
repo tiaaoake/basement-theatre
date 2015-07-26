@@ -46,17 +46,25 @@ summary-block styles
 }
 
 
-/* side-wide width definitions */
 
+
+// Layout
 .sqs-layout {
     width: 100%;
-    margin: 0 auto;
+
+    > .sqs-row {
+        max-width: @constraint-width;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
-.sqs-layout > .sqs-row {
-    max-width: @constraint-width;
-    margin: 0 auto !important;
+.sqs-row-wide {
+    max-width: @constraint-width-wide;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 
 .col > .sqs-row {
     max-width: @constraint-width !important;
