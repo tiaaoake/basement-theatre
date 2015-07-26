@@ -1,7 +1,7 @@
 {.repeated section items}
     <div class="sqs-col sqs-col-3 coming-soon-item">
         <img class="sqs-col sqs-col-4 event-image" {@|image-meta}>
-        <div class="sqs-col sqs-col-8 event-meta">
+        <div class="sqs-col sqs-col-7 event-meta">
             <h3 class="title">{title}</h3>
             <h4 class="dates"><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h4>
         </div>
