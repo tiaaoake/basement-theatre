@@ -1,6 +1,6 @@
 {.repeated section items}
-    <div class="sqs-col sqs-col-4 whats-on-wrapper">
-        <div class="whats-on-item-entry hover-reveal">
+    <div class="sqs-col sqs-col-4">
+        <div class="whats-on-item hover-reveal">
             <div class="flipper" data-flipper>
                 <div class="front">
                     <div class="img-container">
