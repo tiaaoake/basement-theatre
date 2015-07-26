@@ -3,16 +3,6 @@
 //tweak: { type: 'color', title: 'Site Background', target: 'body', category: 'Site Wide' }
 @bgColor: #fff;
 
-//tweak: { type: 'image', title: 'Site Background Image', target: 'body', category: 'Site Wide' }
-.bg-image {
-  //background-image: url('/assets/groovepaper.png');
-  // background-position: top left;
-  // background-size: auto;
-  // background-attachment: scroll;
-  // background-repeat: repeat;
-}
-
-//tweak: { type: 'dropdown', title: 'Canvas Setting', options:[ 'Full Width', 'Site Width' ], default: 'Full Width', target: '#canvas', category: 'Site Wide' }
 
 //tweak: { type: 'value', title: 'Canvas Offset', min: 0, max: 200, step: 1, target: '#canvas', property: ['margin-top', 'margin-bottom'], category: 'Site Wide' }
 @cnvsOffset: 0px;
@@ -26,7 +16,6 @@
 //tweak: { type: 'color', title: 'Lines & Decorations', target: '#page-body', category: 'Site Wide' }
 @bordersColor: #E6E6E6;
 
-//tweak: { type: 'checkbox', title: 'Hide Delimiter', active: false, target: '.hentry .post, .article-meta, #navigation-top, #navigation-bottom', category: 'Site Wide' }
 
 
 /* HEADER */
@@ -1248,45 +1237,6 @@ body.banner-content-empty {
 //     }
 //   }
 // }
-
-body.banner-content-site-title-logo-tagline.top-navigation-alignment-center.canvas-setting-full-width {
-  .horizontal-navigation-bar nav {
-    /*padding-right: @cnvsPadding;*/
-  }
-}
-
-/* banner alignment */
-
-body.banner-alignment-left {
-  #banner-area { text-align: left; }
-  .site-subtitle,
-  .logo-subtitle,
-  .page-title,
-  .page-description p,
-  #banner-wrapper #banner { margin-left: 0; margin-right: auto; }
-}
-
-body.banner-alignment-center {
-  #banner-area { text-align: center; }
-  .site-subtitle,
-  .logo-subtitle,
-  .page-title,
-  .page-description p,
-  #banner-wrapper #banner { margin-left: auto; margin-right: auto; }
-  #site-title a { margin-right: -@site-title-font-letter-spacing;}
-  #page-title { margin-right: -@page-title-font-letter-spacing;}
-}
-
-body.banner-alignment-right {
-  #banner-area { text-align: right; }
-  .site-subtitle,
-  .logo-subtitle,
-  .page-title,
-  .page-description p,
-  #banner-wrapper #banner { margin-left: auto; margin-right: 0; }
-  #site-title a { margin-right: -@site-title-font-letter-spacing;}
-  #page-title { margin-right: -@page-title-font-letter-spacing;}
-}
 
 
 /* sidebar options */
