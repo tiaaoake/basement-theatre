@@ -13,7 +13,7 @@
 }
 
 //tweak: { type: 'value', title: 'Site Width', min: 480, max: 1280, step: 10, target: '#page-body', property: 'width', category: 'Site Wide' }
-@siteWidth: 960px;
+// @siteWidth: 960px;
 
 //tweak: { type: 'dropdown', title: 'Canvas Setting', options:[ 'Full Width', 'Site Width' ], default: 'Full Width', target: '#canvas', category: 'Site Wide' }
 
@@ -390,7 +390,7 @@
 
 @sqsGridNegateGutter: true;
 
-@pageWidth: @siteWidth + (@cnvsPadding / 2);
+@pageWidth: @constraint-width + (@cnvsPadding / 2);
 
 
 /* COLORS & BACKGROUNDS
@@ -565,7 +565,7 @@ nav ul, nav ol { margin: 0; }
   border-color: @bordersColor;
   padding: @articleSpacing 0 0;
   width: 100%;
-  max-width: @siteWidth;
+  max-width: @constraint-width;
   margin: 0 auto;
 
   ul {
@@ -708,7 +708,7 @@ span.delimiter {
 
 #banner-area,
 #page-footer {
-  width: @constrain-width;
+  width: @constraint-width;
   max-width: 100%;
   clear: both;
   margin: 0 auto;
@@ -1118,7 +1118,7 @@ body.canvas-setting-full-width {
 
 body.canvas-setting-site-width {
 
-  #canvas-wrapper { width: @constrain-width; max-width: 100%; }
+  #canvas-wrapper { width: @constraint-width; max-width: 100%; }
 
   #canvas { padding: 0 @cnvsPadding; }
 
@@ -1446,7 +1446,7 @@ body.banner-alignment-right {
     border-right-color: transparent;
   }
 
-  #sidebar-wrapper { position: absolute; top: 0; left: 0; width: 100%; max-width: @constrain-width; margin: 0 auto; }
+  #sidebar-wrapper { position: absolute; top: 0; left: 0; width: 100%; max-width: @constraint-width; margin: 0 auto; }
 
   #sidebar-one-wrapper,
   #sidebar-two-wrapper {

@@ -48,20 +48,20 @@
 
 
 // Free up site width
-body.canvas-setting-site-width #canvas-wrapper { width: auto; max-width: @constrain-width; }
+body.canvas-setting-site-width #canvas-wrapper { width: auto; max-width: @constraint-width; }
 
 #banner-area,
 #page-body,
 #page-footer {
   width: auto;
-  max-width: @constrain-width;
+  max-width: @constraint-width;
 }
 #page-body { padding: 0 0; }
 
 
 // smaller than site width
 
-@media only screen and (max-width: @constrain-width) {
+@media only screen and (max-width: @constraint-width) {
 
   body.canvas-setting-full-width,
   body.canvas-setting-site-width {
@@ -173,7 +173,7 @@ body.canvas-setting-site-width #canvas-wrapper { width: auto; max-width: @constr
   #page-body,
   #page-footer {
     width: auto;
-    max-width: @constrain-width;
+    max-width: @constraint-width;
   }
 
   #banner-area {
