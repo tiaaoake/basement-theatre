@@ -3,7 +3,7 @@
     <div class="sqs-row">
         <h1 class="text-align-center">What's On</h1>
         <div class="sqs-col sqs-col-12">
-            <squarespace:query collection="whats-on" limit="3">
+            <squarespace:query collection="whats-on" featured="true" limit="3">
                 {@|apply whats-on-item.block}
             </squarespace:query>
         </div>
@@ -14,7 +14,7 @@
             <h3 class="text-align-center">COMING SOON</h1>
         </div>
         <div class="sqs-col sqs-col-12 coming-soon-row">
-            <squarespace:query collection="whats-on" limit="4">
+            <squarespace:query collection="whats-on" featured="false" limit="4">
                 {@|apply coming-soon-item.block}
             </squarespace:query>
         </div>
