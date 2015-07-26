@@ -14,6 +14,29 @@
         font-size: 3.75em; // 60px MAKE THIS GLOBAL?
         text-transform: uppercase;
     }
+
+    .title,
+    .dates {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-bottom: 0;
+
+        font-family: @font-knockout-47;
+        font-weight: 100;
+        text-transform: uppercase;
+
+        border-top: 1px solid transparent;
+    }
+
+    .title {
+        font-size: 1.625em; // 26px
+    }
+
+    .dates {
+        font-size: 1.25em; // 20px
+
+        border-bottom: 1px solid transparent;
+    }
 }
 
 .whats-on-item {
@@ -112,10 +135,6 @@
         padding: 10px 10px 0;
 
         background-color: @color-quaternary;
-
-        h2 {
-            width: 100%;
-        }
     }
 
     .title,
@@ -126,25 +145,7 @@
 
     .title,
     .dates {
-        padding-top: 1px;
-        padding-bottom: 1px;
-        margin-bottom: 0;
-
-        font-family: @font-knockout-47;
-        font-weight: 100;
-        text-transform: uppercase;
-
-        border-top: 1px solid @color-primary;
-    }
-
-    .title {
-        font-size: 1.625em; // 26px
-    }
-
-    .dates {
-        font-size: 1.25em; // 20px
-
-        border-bottom: 1px solid @color-primary;
+        border-color: @color-primary;
     }
 
     .month {
@@ -240,11 +241,6 @@
     width: 70px;
     float: left;
     // margin-right:1em;
-}
-
-.coming-soon-row {
-    padding-bottom: 40px;
-    border-bottom: 1px solid #FFF;
 }
 
 .coming-soon-thumb .coming-soon-image {

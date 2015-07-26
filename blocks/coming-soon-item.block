@@ -1,13 +1,19 @@
 {.repeated section items}
-    <div class="sqs-col sqs-col-3">
-        <div class="coming-soon-thumb sqs-row" id="card1">
+    <div class="sqs-col sqs-col-3 coming-soon-item">
+        <img class="sqs-col sqs-col-4 event-image" {@|image-meta}>
+        <div class="sqs-col sqs-col-8 event-meta">
+            <h3 class="title">{title}</h3>
+            <h4 class="dates"><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h4>
+        </div>
+
+        <!-- <div class="coming-soon-thumb sqs-row" id="card1">
             <div class="content-fill coming-soon-image" id="post-image">
-                <img {@|image-meta}>
+
             </div>
             <div class="coming-soon-details">
                 <h2><a href="{fullUrl}">{title}</a></h2>
                 <p>{customContent.dates}</p>
             </div>
-        </div>
+        </div> -->
     </div>
 {.end}

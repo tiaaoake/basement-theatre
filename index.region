@@ -2,7 +2,7 @@
 
     <div class="sqs-row-wide">
         <h1 class="heading-main text-align-center">What's On</h1>
-        <div class="sqs-col-12">
+        <div class="sqs-col-12 whats-on-items">
             <squarespace:query collection="whats-on" featured="true" limit="3">
                 {@|apply whats-on-item.block}
             </squarespace:query>
@@ -11,14 +11,14 @@
         <div class="sqs-col-12 coming-soon">
             <h4 class="heading-small text-align-center">Coming Soon</h4>
 
-            <div class="sqs-col sqs-col-12 coming-soon-row">
+            <div class="sqs-col-12 coming-soon-items">
                 <squarespace:query collection="whats-on" category="Coming Soon" limit="4">
                     {@|apply coming-soon-item.block}
                 </squarespace:query>
             </div>
-            <div class="sqs-col sqs-col-12">
+<!--             <div class="sqs-col sqs-col-12">
                 <button class="btn archive">Archive</button>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
