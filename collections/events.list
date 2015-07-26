@@ -1,7 +1,5 @@
 <div class="sqs-col-12 whats-on-items">
-    {.repeated section items}
-        {@|apply whats-on-item.block}
-    {.end}
+    {@|apply whats-on-item.block}
 </div>
 
 {.repeated section items}
