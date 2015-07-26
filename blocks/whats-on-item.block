@@ -4,7 +4,7 @@
             <div class="flipper" data-flipper>
                 <div class="front">
                     <div class="event-details">
-                        <img class="event-image" src="{assetUrl}">
+                        <img class="event-image" src="{@|image-meta}">
                         <div class="event-meta">
                             <h3 class="title">{title}</h3>
                             <h4 class="dates"><time datetime="{startDate|date %F}">{startDate|date %e %b}</time> - <time datetime="{endDate|date %F}">{endDate|date %e %b %Y}</time></h4>
