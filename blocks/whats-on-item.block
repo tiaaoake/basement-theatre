@@ -1,32 +1,34 @@
-<div class="sqs-col sqs-col-4 whats-on-wrapper">
-    <div class="whats-on-item-entry hover-reveal">
-        <div class="flipper" data-flipper>
-            <div class="front">
-                <div class="img-container">
-                    <img src="{bannerImg}{assetUrl}">
+{.section item}
+    <div class="sqs-col sqs-col-4 whats-on-wrapper">
+        <div class="whats-on-item-entry hover-reveal">
+            <div class="flipper" data-flipper>
+                <div class="front">
+                    <div class="img-container">
+                        <img src="{bannerImg}{assetUrl}">
 
-                    <div class="whats-on-buttons">
-                        <button class="btn info" data-flip>More Info</button>
-                        <a class="btn book" href="{fullUrl}">Book Now</a>
+                        <div class="whats-on-buttons">
+                            <button class="btn info" data-flip>More Info</button>
+                            <a class="btn book" href="{fullUrl}">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-title row">
+                        <h2><a href="{fullUrl}">{title}</a></h2>
+                        <h3>{customContent.dates}</h3>
                     </div>
                 </div>
 
-                <div class="event-title row">
-                    <h2><a href="{fullUrl}">{title}</a></h2>
-                    <h3>{customContent.dates}</h3>
-                </div>
-            </div>
+                <div class="back">
+                    <div class="img-container">
+                        <p>{excerpt}</p>
 
-            <div class="back">
-                <div class="img-container">
-                    <p>{excerpt}</p>
-
-                    <div class="whats-on-buttons">
-                        <button class="btn info" data-flip-back>Back</button>
-                        <a class="btn book" href="{fullUrl}">Book Now</a>
+                        <div class="whats-on-buttons">
+                            <button class="btn info" data-flip-back>Back</button>
+                            <a class="btn book" href="{fullUrl}">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+{.end}
