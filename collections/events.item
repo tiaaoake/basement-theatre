@@ -1,14 +1,22 @@
 {.section item}
 
+
+    <p>Tagline: {customContent.tagline}</p>
+    <p>Runtime: {customContent.runtime}</p>
+    <p>Director: {customContent.director}</p>
+    <p>Cast: {customContent.cast}</p>
+    <p>Venue: {customContent.venue}</p>
+    <p>Prices: {customContent.price}</p>
+
   <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
 
-	<div class="content-wrapper">
+    <div class="content-wrapper">
 
     <div class="post{.passthrough?} link-list-item{.end}">
 
     <!--POST HEADER-->
 
-			<header>
+            <header>
 
           <span class="article-dateline-above-title">
             <span class="date"><a href="{fullUrl}"><time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a></span>
@@ -61,7 +69,7 @@
               {@|social-button-inline}
             </div>
 
-            
+
 
             <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 
