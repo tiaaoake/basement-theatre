@@ -4,7 +4,9 @@
         <h1 class="heading-main text-align-center">What's On</h1>
         <div class="sqs-col-12 whats-on-items">
             <squarespace:query collection="whats-on" featured="true" limit="3">
-                {@|apply whats-on-item.block}
+                {.repeated section items}
+                    {@|apply whats-on-item.block}
+                {.end}
             </squarespace:query>
         </div>
 
