@@ -1,6 +1,6 @@
 {.repeated section items}
     <div class="sqs-col sqs-col-3 coming-soon-item">
-        <div class="sqs-col sqs-col-4 content-fit event-image">
+        <div class="sqs-col sqs-col-4 content-fill event-image">
             <img class="" {@|image-meta}>
         </div>
         <div class="sqs-col sqs-col-7 event-meta">
